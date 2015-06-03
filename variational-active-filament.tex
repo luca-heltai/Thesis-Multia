@@ -330,6 +330,32 @@ $$
 \end{aligned}
 $$
 
+Proceding exactly in the same way as done for the nonlinear problem, we solve the linear problem:\\
+Given $dt, B, \alpha$ and $\theta^k, \bar \kappa = \theta^k_s$, find
+$\theta^{k+1}$, $\eta^{k+1}$ and $\tau^{k+1}$ as the solution to
+
+\begin{multline}
+
+\begin{pmatrix}
+\vv A^B &  -\vv M  \\
+%%
+%%
+\frac{1}{dt} \vv M + \vv A^\sigma & \vv A \\
+%%
+%%
+\end{pmatrix}
+%
+\begin{pmatrix}
+\theta^{k+1}\phantom{\big|\!\!}\\
+\eta^{k+1}\phantom{\big|\!\!} 
+\end{pmatrix}
+=\\
+\begin{pmatrix}
+\vv B^{BT}\alpha & +\langle B\theta_s, \delta \theta\rangle\\
+\frac{1}{dt} \vv M \theta^k& +\sigma \langle \theta_s+\eta_s,\delta\eta\rangle
+\end{pmatrix}
+\end{multline}
+
 
 \subsection{Boundary conditions}\label{boundary-conditions}
 
