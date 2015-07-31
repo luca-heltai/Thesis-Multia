@@ -1,1 +1,2 @@
 usepackage_amsmath_usepackage_graphicx_graphicspath__.tex
+documentclass_12pt_article_usepackage_pdfsync__.tex
