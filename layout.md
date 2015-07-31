@@ -1,0 +1,1 @@
+usepackage_amsmath_usepackage_graphicx_graphicspath__.tex
