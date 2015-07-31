@@ -1,1 +1,0 @@
-documentclass_12pt_article_usepackage_pdfsync__.tex
