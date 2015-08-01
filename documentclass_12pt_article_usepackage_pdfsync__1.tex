@@ -35,11 +35,11 @@ Let \mathbf{m}(s,t) be the contact couple exerted by the material of [s,1] on th
 \]
 
 We assume that the material of the rod is viscoelastic causing internal energy dissipation and having constitutive equations of the form
-\[  N (s,t)=  \hat{N}(\nu (s,t),\eta (s,t)) + A \nu_t (s,t)
+\[  N (s,t)=  \hat{N}(\nu (s,t),\eta (s,t)) + \tilde{A} \nu_t (s,t)
 \]
-\[  H (s,t)=  \hat{H}(\nu (s,t),\eta (s,t)) + B \eta_t (s,t)
+\[  H (s,t)=  \hat{H}(\nu (s,t),\eta (s,t)) + \tilde{B} \eta_t (s,t)
 \]
-\[  M (s,t)=  \hat{M}(\nu (s,t),\eta (s,t), \mu(s,t)) + C \mu_t (s,t),
+\[  M (s,t)=  \hat{M}(\nu (s,t),\eta (s,t), \mu(s,t)) + \tilde{C} \mu_t (s,t),
 \]
 where \^{N},\^{H},\^{M} are given functions on (0, \infty ) \textmultiply \textcolonmonetary{R} \textmultiply \textcolonmonetary{R} and where A, B, C are positive constants.
 
@@ -48,12 +48,14 @@ We model this by introducing the elastic potential density  as
 + \frac{\cC}{2} (\eta - \eta_0 )^2
 + \frac{\cB}{2} (\mu -\alpha)^2,
 \]
-where \alpha = \alpha(s,t) is the spontaneous curvature, \nu = \nu(s,t) describes the stretch, \eta = \eta(s,t) defines the shear strain and \cA, \cB, \cC represent respectively the 
+where \alpha = \alpha(s,t) is the spontaneous curvature, \nu = \nu(s,t) describes the stretch, \eta = \eta(s,t) defines the shear strain and {\cA}, {\cB}, {\cC} represent respectively the the stretch stiffness, the bending stiffness, the shear stiffness
+\\
 and the internal energy dissipation density as 
 \[ \mathcal{D}_{diss}(\mathbf{y}_t) = \frac{A}{2}\mid\mu_t\mid^2 + \frac{A}{2}\mid\eta_t\mid^2
 + \frac{A}{2}\mid\nu_t\mid^2.
 \]
 \end{document}
+  
   
   
   
