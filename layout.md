@@ -1,2 +1,2 @@
 documentclass_12pt_article_usepackage_pdfsync__.tex
-begin_document_section_Derivation_of__.tex
+documentclass_12pt_article_usepackage_pdfsync__1.tex
