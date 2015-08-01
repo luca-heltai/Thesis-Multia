@@ -24,7 +24,7 @@
 \subsection{Some highlights of Hamilton's Principle}
 \subsection{Derivation of the Equations of Motion}
 Under the action of forces, the elastic rod-like filament suffers deformations, which we assume to be planar. Whenever these deformations occur, it will be a contact force \textbf{n}(s,t) exerted by the material of [s,1] on that of [0,s). \textbf{n}(s,t) is assumed to lie to the (\textbf{e_1,e_2})-plane, so that it has the form
-\[  \textbf{n}(s,t)= \textbf{N} (s,t) \textbf{a}(s,t) + \textbf{H} (s,t) \textbf{b} (s,t).
+\[  \textbf{n}(s,t)= N(s,t) \textbf{a}(s,t) + H(s,t) \textbf{b} (s,t).
 \]
 Let \textbf{m}(s,t) be the contact couple exerted by the material of [s,1] on tha of [0,s). We assume that \textbf{m} is perpendicular to the (\textbf{e_1,e_2})-plane so that it has the form
 \[ 
@@ -32,9 +32,15 @@ Let \textbf{m}(s,t) be the contact couple exerted by the material of [s,1] on th
 \]
 
 We assume that the material of the rod is viscoelastic causing internal energy dissipation and having constitutive equations of the form
-
+\[  N (s,t)=  \hat{N}(\nu (s,t),\eta (s,t)) + A \nu_t (s,t)
+\]
+\[  H (s,t)=  \hat{H}(\nu (s,t),\eta (s,t)) + B \eta_t (s,t)
+\]
+\[  M (s,t)=  \hat{M}(\nu (s,t),\eta (s,t), \mu(s,t)) + C \mu_t (s,t)
+\]
+where \hat{N},\hat{H},\hat{M}are given functions on (0, \(\infty\) ) \times \mathbb{R} \times \mathbb{R}
 We model this by introducing the elastic potential density  as
-\[ \mathcal{U}(\textbf{y}) = \frac{\cA}{2} (\nu - \nu_0)^2
+\[ \mathfrak{U}(\textbf{y}) = \frac{\cA}{2} (\nu - \nu_0)^2
 +\frac{\cC}{2} (\eta - \eta_0 )^2
 +\frac{\cB}{2} (\mu -\alpha)^2 
 \]
@@ -42,6 +48,7 @@ and the internal energy dissipation density as
 
 \]
 \end{document}
+  
   
   
   
