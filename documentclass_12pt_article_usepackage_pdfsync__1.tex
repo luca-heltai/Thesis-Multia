@@ -57,11 +57,14 @@ Along with the elastic potential we introduce the internal energy dissipation de
 \]
 
 \[
-\mathbf{Q}_{diss}= (\tilde{A}(\nu_t)_s,\tilde{B}(\eta_t)_s,\tilde{A}(\mu_t)_s.
+\mathbf{Q}_{diss}= (\tilde{A}(\nu_t)_s,\tilde{B}(\eta_t)_s,\tilde{A}(\mu_t)_s).
 \]
 When immersed in a fluid, if we use \emph{resistive force theory},
-then the force applied by fluid on the rod can be modeled as
-\[\mathbf{Q}_{ext} = -( \xi_\perp \mathbf{\tau}\otimes\mathbf{\tau} + \xi_\parallel \mathbf{P}\otimes \mathbf{P}) \mathbf{r}_t.\]
+then the external energy dissipation density and the force applied by fluid on the rod can be modeled as
+\[ \mathcal{D}_{ext}= -((\left|\xi_\parallel \mathbf{r}_t\otimes\mathbf{\tau}\right|)^2 + (\left|\xi_\perp \mathbf{r}_t\otimes\mathbf{P}\right|)^2
+\]
+
+\[\mathbf{Q}_{ext} = -( \xi_\parallel \mathbf{r}_t\otimes\mathbf{\tau}\mathbf{\tau} + \xi_\perp \mathbf{r}_t\otimes\mathbf{P}\mathbf{\P}.\]
 We deal with the dissipative forces by means of virtual work terms
 \[\delta W = \delta W_{diss} + \delta W_{ext} = (\mathbf{Q}_{diss}+\mathbf{Q}_{ext})\cdot\mathbf{y}.\]
 
@@ -72,6 +75,7 @@ We deal with the dissipative forces by means of virtual work terms
 
 
 \end{document}
+  
   
   
   
