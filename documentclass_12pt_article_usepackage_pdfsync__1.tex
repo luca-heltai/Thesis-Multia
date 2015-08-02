@@ -112,7 +112,7 @@ We take the integral of the total potential perturbation with respect to time fr
 (\cA(\nu-\nu_{0}),\cB(\eta-\eta_0),\cC(\mu-\mu_0))\cdot(\delta \mathcal{r}_s,\delta\theta_s)\,ds\,dt.\\
 \end{split}
 \end{equation}
-Integrating the expression on the right by parts with respect to s and recalling that $\delta\mathbf{y}$ vanishes at {0,1} gives
+Integrating the expression on the right by parts with respect to s and recalling that $\delta\mathbf{y}$ vanishes at \{\0,1\}\ gives
 \[\int_{t_1}^{t_2}\int_{0}^{1}\delta\mathcal{U}\,ds\,dt =
 -\int_{t_1}^{t_2} \int_{0}^{1} 
 (\cA(\nu-\nu_{0})_s,\cB(\eta-\eta_0)_s,\cC(\mu-\mu_0)_s)\cdot(\delta\mathbf{r},\delta\theta)\,ds\,dt.
@@ -127,10 +127,26 @@ Finally,
 \int_{t_1}^{t_2} \int_{0}^{1} \mathcal{Q}_{ext}
 \,ds\,dt\\
                                               & = \int_{t_1}^{t_2} \int_{0}^{1} (\tilde{A}(\nu_t)_s,\tilde{B}(\eta_t)_s,\tilde{A}(\mu_t)_s)\cdot (\delta\mathbf{r},\delta\theta)
-\,ds\,dt - \int_{t_1}^{t_2} \int_{0}^{1}  (\xi_\parallel (\mathbf{r}_t\otimes\mathbf{\tau})\mathbf{\tau} + \xi_\perp (\mathbf{r}_t\otimes\mathbf{P})\mathbf{P})\cdot (\delta\mathbf{r}\\
-\,ds\,dt
+\,ds\,dt - \int_{t_1}^{t_2} \int_{0}^{1}  (\xi_\parallel (\mathbf{r}_t\cdot\mathbf{\tau})\mathbf{\tau} + \xi_\perp (\mathbf{r}_t\cdot\mathbf{P})\mathbf{P})\cdot \delta\mathbf{r}\,ds\,dt
 \end{split}
 \end{equation}
+After putting all together we have
+begin{equation}
+begin{split}
+ \int_{t_1}^{t_2} \int_{0}^{1} \delta \mathcal{L}+\delta W\, ds\,dt= \\ 
+         &= \int_{t_1}^{t_2} \int_{0}^{1}
+         \lgroup 
+         -\ro S \mathbf{r}_{tt} + (\cA(\nu -\nu_0)_s,\cB(\eta -\eta_0)_s) + (\tilde_{A}(\nu_t)_s,\tilde_{B}(\eta_t)_s)- (\xi_\parallel (\mathbf{r}_t\cdot\mathbf{\tau})\mathbf{\tau} + \xi_\perp (\mathbf{r}_t\cdot\mathbf{P})\mathbf{P})
+         \rgroup 
+         \cdot\delta\mathbf{r}\,ds\,dt\\
+         + \int_{t_1}^{t_2} \int_{0}^{1}
+         \lgroup 
+         -\ro I \theta_{tt} + \cB(\mu-\alpha)_s + \tilde_{C}(\mu_t)_s \rgroup 
+         \cdot\delta\mathbf{r}\,ds\,dt
+end{split}
+end{equation}
+
+
 
 
 
@@ -140,6 +156,7 @@ Finally,
 
 
 \end{document}
+  
   
   
   
