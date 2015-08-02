@@ -99,7 +99,7 @@ The same argument yields
 \begin{equation}
 \begin{split}
  \delta\mathcal{U}& = \frac{\partial \mathcal{U}(\mathbf{y} + \epsilon\delta\mathbf{y})}{\partial{\epsilon}} \arrowvert_{\epsilon=0}\\
-                  & = \cA(\nu-\nu_{0})\delta\nu+\cB(\eta-\eta_0)\delta\eta+\cC(\mu-\mu_0)\delta\mu.\\
+                  & = \cA(\nu-\nu_{0})\delta\nu+\cC(\eta-\eta_0)\delta\eta+\cB(\mu-\mu_0)\delta\mu.\\
 \end{split}
 \end{equation}
 We take the integral of the total potential perturbation with respect to time from t_1 to t_2
@@ -107,15 +107,15 @@ We take the integral of the total potential perturbation with respect to time fr
 \begin{split}
  \delta\mathcal{U}& = \int_{t_1}^{t_2}\int_{0}^{1}\delta\mathcal{U}\,ds\,dt \\
                   & = \int_{t_1}^{t_2} \int_{0}^{1} 
-(\cA(\nu-\nu_{0}),\cB(\eta-\eta_0),\cC(\mu-\mu_0))\cdot(\delta\nu,\delta\eta,\delta\mu)\,ds\,dt\\
+(\cA(\nu-\nu_{0}),\cC(\eta-\eta_0),\cB(\mu-\mu_0))\cdot(\delta\nu,\delta\eta,\delta\mu)\,ds\,dt\\
                   & = \int_{t_1}^{t_2} \int_{0}^{1} 
-(\cA(\nu-\nu_{0}),\cB(\eta-\eta_0),\cC(\mu-\mu_0))\cdot(\delta \mathcal{r}_s,\delta\theta_s)\,ds\,dt.\\
+(\cA(\nu-\nu_{0}),\cC(\eta-\eta_0),\cB(\mu-\mu_0))\cdot(\delta \mathcal{r}_s,\delta\theta_s)\,ds\,dt.\\
 \end{split}
 \end{equation}
 Integrating the expression on the right by parts with respect to s and recalling that $\delta\mathbf{y}$ vanishes at \{\0,1\}\ gives
 \[\int_{t_1}^{t_2}\int_{0}^{1}\delta\mathcal{U}\,ds\,dt =
 -\int_{t_1}^{t_2} \int_{0}^{1} 
-(\cA(\nu-\nu_{0})_s,\cB(\eta-\eta_0)_s,\cC(\mu-\mu_0)_s)\cdot(\delta\mathbf{r},\delta\theta)\,ds\,dt.
+(\cA(\nu-\nu_{0})_s,\cC(\eta-\eta_0)_s,\cB(\mu-\mu_0)_s)\cdot(\delta\mathbf{r},\delta\theta)\,ds\,dt.
 \]
 
 Finally,
@@ -149,7 +149,7 @@ After putting all together we have
          \cdot\delta\mathbf{r}\,ds\,dt
 \end{split}
 \end{equation}
-Since the Hamilton's Principle must hold, it forces the coefficients multiplying $\delta\mathbf_{r}$ and $\delta\theta$ to vanish. The equations of motion then read
+Since the Hamilton's Principle must hold, it forces the coefficients multiplying $\delta\mathbf{r}$ and $\delta\theta$ to vanish. The equations of motion then read
 
 
 
@@ -164,6 +164,7 @@ Since the Hamilton's Principle must hold, it forces the coefficients multiplying
 
 
 \end{document}
+  
   
   
   
