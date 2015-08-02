@@ -165,8 +165,20 @@ M_s=\rho I \theta_{tt}
 We impose now the constraints that the rod is inextensible and unsharable:
 \begin{eqnarray*}
 \nu(s,t)=1 \\ 
-\eta(s,t)=0
+\eta(s,t)=0.
 \end{eqnarray*}
+Let $bar_{N}=bar_{N}$(s,t) and $bar_{H}=bar_{H}$(s,t) denote the \emph{Lagrange multipliers} representing the reactive internal tractions(axial tension and shear force, respectively)enforcing the constraints.
+We give them the same letters as the components of contact force, because morally, from a physic point of view they have the same meaning.
+We define
+\[
+\mathcal{C}(s,t) = N(\nu-1) + H\eta
+\]
+and consider
+\[\int_{t_1}^{t_2} \int_{0}^{1} \delta \mathcal{C}\, ds \, dt = \int_{t_1}^{t_2} \int_{0}^{1} ((\bar_{N}\mathbf{a})_s + (\bar_{H}\mathbf{b})_s), \nu\bar_{H}-\eta\bar_{N})\cdot(\delta\mathbr{r},\delta\theta)
+ds \, dt.
+\]
+
+
 
 
 
@@ -178,6 +190,7 @@ We impose now the constraints that the rod is inextensible and unsharable:
 
 
 \end{document}
+  
   
   
   
