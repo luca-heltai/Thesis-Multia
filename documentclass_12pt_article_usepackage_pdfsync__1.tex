@@ -53,10 +53,10 @@ We model this by introducing the elastic potential density  as
 + \frac{\cC}{2} (\eta - \eta_0 )^2
 + \frac{\cB}{2} (\mu -\alpha)^2,
 \]
-where $\alpha$ = $\alpha$(s,t) is \emph{spontaneous curvature}, $\nu$ = $\nu$(s,t) describes the stretch, $\eta$ = $\eta$(s,t) defines the shear strain and $\cA$, $\cB$, $\cC$ represent respectively the stretch stiffness, the bending stiffness and the shear stiffness. 
+where $\alpha$ = $\alpha$(s,t) is \emph{spontaneous curvature}, $\nu$ = $\nu$(s,t) describes the stretch, $\eta$ = $\eta$(s,t) defines the shear strain and $\cA$, $\cB$, $\cC$ represent respectively the stretch stiffness, the bending stiffness and the shear stiffness. We assume that $\nu_0\equiv1$ and that $\eta_0\equiv0$.
 This formulation takes into account that we are dealing with a \emph{compressible} viscoelastic medium that has the ability to actively modify its spontaneous curvature.\\
 Tha Lagrangian density $\mathcal{L}$ of the system will therefore read
-\[ \mathcal{L}(\mathbf{y},\mathbf{y}_t)= \mathcal{T}(\mathbf{y}_t) + \mathcal{U}(\mathbf{y}).
+\[ \mathcal{L}(\mathbf{y},\mathbf{y}_t)= \mathcal{T}(\mathbf{y}_t) - \mathcal{U}(\mathbf{y}).
 \]
 $\bullet$\emph{The Virtual Word $\delta$W}. Along with the elastic potential we introduce the internal energy dissipation density  and the dissipative force associated as 
 \[ \mathcal{D}_{diss}(\mathbf{y}_t) = \frac{\tilde{A}}{2}\left|\mu_t\right|^2 + \frac{\tilde{B}}{2}\left|\eta_t\right|^2
@@ -73,7 +73,7 @@ then the external energy dissipation density and the force applied by fluid on t
 
 \[\mathbf{Q}_{ext} = -( \xi_\parallel (\mathbf{r}_t\otimes\mathbf{\tau})\mathbf{\tau} + \xi_\perp (\mathbf{r}_t\otimes\mathbf{P})\mathbf{P}),
 \]
-where $\xi_\parallel$ and $\xi_\perp$ are local friction coefficients fort tangential and normal motion, respectively.
+where $\xi_\parallel$ and $\xi_\perp$ are local friction coefficients for tangential and normal motion, respectively.
 We deal with the dissipative forces by means of virtual work terms
 \[\delta W = \delta W_{diss} + \delta W_{ext} = (\mathbf{Q}_{diss}+\mathbf{Q}_{ext})\cdot\mathbf{y}.
 \]
@@ -96,6 +96,7 @@ and replace them
 
 
 \end{document}
+  
   
   
   
