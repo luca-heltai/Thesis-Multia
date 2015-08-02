@@ -89,12 +89,15 @@ for every perturbation $\delta \mathbf{y}$ defined on $[0,1]x[t_1,t_2]$ and vani
 \end{split}
 \end{equation}
 
-and
-
-and replace them
-
+and take the integral with respect to time from t_1 to t_2
+\[\int_{t_1}^{t_2} \int_{0}^{1} \delta \mathcal{T}\, ds \, dt = \int_{t_1}^{t_2} \int_{0}^{1} \rho S\mathbf{r}_t (\delta\mathbf{r})_t + \rho I \theta_t (\delta \theta)_t\, ds \, dt.
+\]
+Integrating the expression on the right by parts with respect to time and recalling that $\delta\mathbf{y}$ vanishes at t_1 and t_2  yields
+\[\int_{t_1}^{t_2} \int_{0}^{1} \delta \mathcal{T}\, ds \, dt = -\int_{t_1}^{t_2} \int_{0}^{1} (\rho S\mathbf{r}_tt (\delta\mathbf{r})_tt)\cdot(\delta\mathbf{r},\delta\theta)_t\, ds \, dt.
+\]
 
 \end{document}
+  
   
   
   
