@@ -1,2 +1,3 @@
 documentclass_12pt_article_usepackage_pdfsync__.tex
 documentclass_12pt_article_usepackage_pdfsync__1.tex
+begin_equation_sin_theta_x__.tex
