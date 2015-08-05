@@ -1,0 +1,46 @@
+\begin{document}
+
+\section{Matrix form of the weak
+formulation}\label{matrix-form-of-the-weak-formulation}
+
+\begin{multline}
+\label{eq:7}
+\xi_\perp\vv M \theta_t + 
+\begin{pmatrix}
+\vv 0 & 0 & \xi\par \vv M^{\bar{\theta}_t} & -\vv B^{\bar{\theta}_s} + -\vv B^{\bar{\theta}_s T} & \vv M^{bar{\theta}^2_s +\vv A} & 0 \\
+%%
+%%
+0 & \vv M^{\bar \theta_t} & 0 &
+ \vv M^{\bar\theta^2_s T}
+- \gamma\vv B^{\bar\kappa} \\
+%%
+%%
+0 & 
+ \vv B^{\bar\kappa}
+- \gamma\vv B^{\bar\kappa T} 
+&
+%
+%
+\gamma \vv A
++ \vv M^{\bar \kappa^2}
+\end{pmatrix}
+%
+\begin{pmatrix}
+\theta\phantom{\big|\!\!}\\
+\nu\phantom{\big|\!\!} \\
+\eta\phantom{\big|\!\!}\\
+H\phantom{\big|\!\!}\\
+N\phantom{\big|\!\!}\\
+M\phantom{\big|\!\!}
+\end{pmatrix}
+=\\
+\begin{pmatrix}
+\vv B^{BT}\alpha & +\langle B(\theta_s-\alpha), \delta \theta\rangle\\
+& \langle \eta_s+\bar\kappa\tau,\delta\eta\rangle
+\\
+&\gamma\langle\tau_{s}-\bar \kappa\eta, \delta\tau\rangle 
+\end{pmatrix}
+\end{multline}
+
+\end{document}
+  
