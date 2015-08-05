@@ -6,8 +6,7 @@ formulation}\label{matrix-form-of-the-weak-formulation}
 \begin{multline}
 \label{eq:6}
 \begin{pmatrix}
-%
-0 & 0 & \xi\par\ M^{\bar{\theta}_t} & -  B^{\bar{\theta}_s} - B^{\bar{\theta}_s T} & M^{\bar{\theta}^2_s +  A} & 0 \\
+0 & 0 & \xi\par\ M^{\bar{\theta}_t} & -  B^{\bar{\theta}_s} - B^{\bar{\theta}_s T} & M^{\bar{\theta}^2_s} + A & 0 \\
 %%
 %%
 0 & \xi_\perp M^{\bar{\theta}_t} & 0 &
@@ -20,24 +19,24 @@ formulation}\label{matrix-form-of-the-weak-formulation}
 0 & Ac  B & 0 & - M & 0 & 0\\
 %%
 %%
-0 & 0 Cc \vv B & 0 & -\vv M & 0\\
+0 & 0 Cc  B & 0 & - M & 0\\
 %%
 %%
-Bc \vv A & 0 & 0 & 0 & 0 & -\vv M
+Bc A & 0 & 0 & 0 & 0 & - M
 \end{pmatrix}
 %
 \begin{pmatrix}
 \theta\phantom{\big|\!\!}\\
-\nu\phantom{\big|\!\!} \\
+\nu\phantom{\big|\!\!}\\
 \eta\phantom{\big|\!\!}\\
 H\phantom{\big|\!\!}\\
 N\phantom{\big|\!\!}\\
 M\phantom{\big|\!\!}
 \end{pmatrix}
-
 \end{multline}
 
 \end{document}
+  
   
   
   
