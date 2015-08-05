@@ -6,7 +6,35 @@ formulation}\label{matrix-form-of-the-weak-formulation}
 \begin{multline}
 \label{eq:6}
 \begin{pmatrix}
-\rho S \vv M^{\nu\bar_{\eta}_t} & - \xi_\parallel \vv M  & -2\rho S \vv M^{\bar_{\theta}_t}& 0 & 0 & 0 \\
+-\rho S \vv M^{\bar{\eta}} & \rho S \vv M & 0 & 0 & 0 & 0 \\
+%%
+%% 
+\rho S \vv M^{\bar{\nu}} & 0 & \rho S \vv M & 0 & 0 & 0\\
+%%
+%%
+-\rho I \vv M & 0 & 0 & 0 & 0 & 0\\
+%%
+%%
+0 & 0 & 0 & 0 & 0 & 0\\
+%%
+%%
+0 & 0 & 0 & 0 & 0 & 0\\
+%%
+%%
+0 & 0 & 0 & 0 & 0 & 0
+\end{pmatrix}
+%
+\begin{pmatrix}
+\theta_tt\phantom{\big|\!\!}\\
+\nu_tt\phantom{\big|\!\!}\\
+\eta_tt\phantom{\big|\!\!}\\
+H_tt\phantom{\big|\!\!}\\
+N_tt\phantom{\big|\!\!}\\
+M_tt\phantom{\big|\!\!}
+\end{pmatrix}\\
++
+\begin{pmatrix}
+-\rho S \vv M^{\nu\bar_{\eta}_t} & - \xi_\parallel \vv M  & -2\rho S \vv M^{\bar_{\theta}_t}& 0 & 0 & 0 \\
 %%
 %% 
 -\rho S \vv M^{\eta\bar_{\eta}_t} & 2\rho S \vv M^{\bar_{\theta}_t} & \xi_\perp \vv M & 0 & 0 & 0 \\
@@ -34,20 +62,20 @@ M_t\phantom{\big|\!\!}
 \end{pmatrix}\\
 +
 \begin{pmatrix}
-0 & 0 & \xi\par\ \vv M^{\bar{\theta}_t} & -  \vv B^{\bar{\theta}_s} - \vv B^{\bar{\theta}_s T} & \vv M^{\bar{\theta}^2_s} + \vv A & 0 \\
+0 & 0 & \xi_\parallel \vv M^{\bar{\theta}_t} & -  \vv B^{\bar{\theta}_s} - \vv B^{\bar{\theta}_s T} & -\vv M^{\bar{\theta}^2_s} + \vv A & 0 \\
 %%
 %%
 0 & \xi_\perp \vv M^{\bar{\theta}_t} & 0 &
- \vv M^{\bar\theta^2_s +  \vv A & +  \vv B^{\bar{\theta}_s} +  \vv B^{\bar{\theta}_s T}} & 0\\
+ \vv M^{\bar{theta}^2_s} +  \vv A & +  \vv B^{\bar{\theta}_s} +  \vv B^{\bar{\theta}_s T}} & 0\\
 %%
 %%
-0 & 0 & 0 & - \vv M^\nu & \vv M^\eta & - \vv B\\
+0 & 0 & 0 & - \vv M^\bar{\nu} & \vv M^\bar{\eta} & - \vv B\\
 %%
 %%
 0 & Ac  \vv B & 0 & - \vv M & 0 & 0\\
 %%
 %%
-0 & 0 Cc  \vv B & 0 & - \vv M & 0\\
+0 & 0 & Cc  \vv B & 0 & - \vv M & 0\\
 %%
 %%
 Bc \vv A & 0 & 0 & 0 & 0 & - \vv M
@@ -63,8 +91,8 @@ M\phantom{\big|\!\!}
 \end{pmatrix}
 \end{multline}
 
-
 \end{document}
+  
   
   
   
