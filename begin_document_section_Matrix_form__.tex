@@ -3,8 +3,36 @@
 \section{Matrix form of the weak
 formulation}\label{matrix-form-of-the-weak-formulation}
 
-\begin{multline*}
+\begin{multline}
 \label{eq:6}
+\begin{pmatrix}
+\rho S \vv M^{\nu\bar_{\eta}_t} & - \xi_\parallel \vv M  & -2\rho S \vv M^{\bar_{\theta}_t}& 0 & 0 & 0 \\
+%%
+%% 
+-\rho S \vv M^{\eta\bar_{\eta}_t} & 2\rho S \vv M^{\bar_{\theta}_t} & \xi_\perp \vv M & 0 & 0 & 0 \\
+%%
+%%
+0 & 0 & 0 & 0 & 0 & 0\\
+%%
+%%
+0 & \tilde{A} \vv M & 0 & 0 & 0 & 0\\
+%%
+%%
+0 & 0 & \tilde{C} \vv M & 0 & 0 & 0\\
+%%
+%%
+\tilde{B} \vv B & 0 & 0 & 0 & 0 & 0
+\end{pmatrix}
+%
+\begin{pmatrix}
+\theta_t\phantom{\big|\!\!}\\
+\nu_t\phantom{\big|\!\!}\\
+\eta_t\phantom{\big|\!\!}\\
+H_t\phantom{\big|\!\!}\\
+N_t\phantom{\big|\!\!}\\
+M_t\phantom{\big|\!\!}
+\end{pmatrix}\\
++
 \begin{pmatrix}
 0 & 0 & \xi\par\ \vv M^{\bar{\theta}_t} & -  \vv B^{\bar{\theta}_s} - \vv B^{\bar{\theta}_s T} & \vv M^{\bar{\theta}^2_s} + \vv A & 0 \\
 %%
@@ -33,10 +61,11 @@ H\phantom{\big|\!\!}\\
 N\phantom{\big|\!\!}\\
 M\phantom{\big|\!\!}
 \end{pmatrix}
-\end{multline*}
+\end{multline}
 
 
 \end{document}
+  
   
   
   
