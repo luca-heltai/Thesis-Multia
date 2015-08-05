@@ -6,22 +6,23 @@ formulation}\label{matrix-form-of-the-weak-formulation}
 \begin{multline}
 \label{eq:6}
 \begin{pmatrix}
-\vv 0 & 0 & \xi\par\vv M^{\bar{\theta}_t} & -\vv B^{\bar{\theta}_s} + -\vv B^{\bar{\theta}_s T} & \vv M^{\bar{\theta}^2_s +\vv A} & 0 \\
+0 & 0 & \xi\par\vv M^{\bar{\theta}_t} & - \vv B^{\bar{\theta}_s} -\vv B^{\bar{\theta}_s T} & \vv M^{\bar{\theta}^2_s + \vv A} & 0 \\
 %%
 %%
 0 & \xi_\perp\vv M^{\bar{\theta}_t} & 0 &
- \vv M^{\bar\theta^2_s T}
-- \gamma\vv B^{\bar\kappa}  & 0\\
+ \vv M^{\bar\theta^2_s + \vv A & + \vv B^{\bar{\theta}_s} + \vv B^{\bar{\theta}_s T}} & 0\\
 %%
 %%
-0 & 
- \vv B^{\bar\kappa}
-- \gamma\vv B^{\bar\kappa T} 
-&
-%
-%
-\gamma \vv A
-+ \vv M^{\bar \kappa^2}
+0 & 0 & 0 & -\vv M^\nu & \vv M^\eta & -\vv B\\
+%%
+%%
+0 & Ac \vv B & 0 & -\vv M & 0 & 0\\
+%%
+%%
+0 & 0 Cc \vv B & 0 & -\vv M & 0\\
+%%
+%%
+Bc \vv A & 0 & 0 & 0 & 0 & -\vv M
 \end{pmatrix}
 %
 \begin{pmatrix}
@@ -42,5 +43,6 @@ M\phantom{\big|\!\!}
 \end{multline}
 
 \end{document}
+  
   
   
