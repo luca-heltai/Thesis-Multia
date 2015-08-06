@@ -67,12 +67,11 @@ $\bullet$\emph{The Virtual Work $\delta$W}. Along with the elastic potential we 
 \[
 \mathbf{Q}_{diss}= (\tilde{A}(\nu_t)_s,\tilde{B}(\eta_t)_s,\tilde{C}(\mu_t)_s).
 \]
-When immersed in a fluid, if we use \emph{resistive force theory},
-then the external energy dissipation density and the force applied by fluid on the rod can be modeled as
-\[ \mathcal{D}_{ext}(\mathbf{y}_t)= -(\xi_\parallel\left|\mathbf{r}_t\cdot\mathbf{\tau}\right|^2 + \xi_\perp \left|\mathbf{r}_t\cdot\mathbf{P}\right|^2),
+When immersed in a fluid,then the external energy dissipation density and the force applied by fluid on the rod can be modeled as
+\[ \mathcal{D}_{ext}(\mathbf{y}_t)= -(\xi_\parallel\left|\mathbf{r}_t\cdot\mathbf{a}\right|^2 + \xi_\perp \left|\mathbf{r}_t\cdot\mathbf{n}\right|^2),
 \]
 
-\[\mathbf{Q}_{ext} = -( \xi_\parallel (\mathbf{r}_t\otimes\mathbf{\tau})\mathbf{\tau} + \xi_\perp (\mathbf{r}_t\otimes\mathbf{P})\mathbf{P}),
+\[\mathbf{Q}_{ext} = -( \xi_\parallel (\mathbf{r}_t\otimes\mathbf{a})\mathbf{a} + \xi_\perp (\mathbf{r}_t\otimes\mathbf{n})\mathbf{n}),
 \]
 where $\xi_\parallel$ and $\xi_\perp$ are local friction coefficients for tangential and normal motion, respectively.
 We deal with the dissipative forces by means of virtual work terms
@@ -134,7 +133,7 @@ Finally,
 After putting all together we have
 \begin{equation}
 \begin{split}
- \int_{t_1}^{t_2} \int_{0}^{1} \delta \mathcal{L}+\delta W\, \d s\,\d t= \\ 
+ \int_{t_1}^{t_2} \int_{0}^{1} \delta \mathcal{L}+\delta W\, \d s\,\d t= 
          &= \int_{t_1}^{t_2} \int_{0}^{1}
          \lgroup 
          -\ro S \mathbf{r}_{tt}\\
@@ -158,9 +157,9 @@ Since the Hamilton's Principle must hold, it forces the coefficients multiplying
 i.e.
 \[
 \mathbf{n}_s - (\xi_\parallel (\mathbf{r}_t\cdot\mathbf{\tau})\mathbf{\tau} + \xi_\perp (\mathbf{r}_t\cdot\mathbf{P})\mathbf{P}) = \rho S \mathbf{r}_{tt}\\
-M_s=\rho I \theta_{tt}
+
+M_s + \mathbf{e}_3\cdot(\mathbf{r}_s\cdot(\bar{N}\mathbf{a} + \bar{H}\mathbf{b}))=\rho I \theta_{tt}
 \]
-(devo ancora controllare l'ultima riga non mi convince quel M_s)
 \subsection{Constraints}
 We treat now the case of a incompressible viscoelastic rod,
 we write the Hamilton's Principle and derive the equations of motion for this case.
@@ -228,6 +227,7 @@ M_s + \mathbf{e}_3\cdot(\mathbf{r}_s\cdot(\bar{N}\mathbf{a} + \bar{H}\mathbf{b})
 
 
 \end{document}
+  
   
   
   
