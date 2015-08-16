@@ -11,7 +11,7 @@ We begin by writing the components of $\mathbf{T}_s$, $\mathbf{F}_{extart}$ and 
                & = N_{ss}\mathbf{a} + N_s\mathbf{a}_s + N_s\mathbf{a}_s + N\mathbf{a}_{ss} + H_{ss}\mathbf{b} + H_s\mathbf{b}_s + H_s\mathbf{b}_s + H\mathbf{b}_{ss}.
 \end{split}
 \end{equation}
-Exploiting the fact that $\mathbf{a}=(cos\theta, sen\theta)$ and $\mathbf{b}=(-sen\theta, cos\theta)$ we can express $\mathbf{a}_s$, $\mathbf{a}_{ss}, \mathbf{b}_s, \mathbf{b}_{ss}$ in function of $\mathbf{a}$ and $\mathbf{b}$ only :
+Exploiting the fact that $\mathbf{a}=(cos\theta, sen\theta)$ and $\mathbf{b}=(-sen\theta, cos\theta)$ we can express $\mathbf{a}_s$, $\mathbf{a}_{ss}, \mathbf{b}_s, \mathbf{b}_{ss}$ in terms of $\mathbf{a}$ and $\mathbf{b}$ only :
 
 \begin{align}
 \mathbf{a}   & = (cos\theta,sen\theta)                        &\mathbf{b}& = (-sen\theta, cos\theta)\\\\
@@ -21,9 +21,15 @@ Exploiting the fact that $\mathbf{a}=(cos\theta, sen\theta)$ and $\mathbf{b}=(-s
 \mathbf{a}_{ss}& = \theta_{ss}\mathbf{b}+\theta_s\mathbf{b}_s & 
 \mathbf{b}_{ss}& = -\theta_{ss}\mathbf{a}+\theta_s\mathbf{a}_s\\
                & = \theta_{ss}\mathbf{b} - \theta_s\theta_s\mathbf{a} & &= -\theta_{ss}\mathbf{a} -\theta_s\theta_s\mathbf{b}\\
-               & = \theta_{ss}\mathbf{b} - \theta_s^2\mathbf{a} & &= -\theta_{ss}\mathbf{a} -\theta_s^2\mathbf{b}.\\
-               
+               & = \theta_{ss}\mathbf{b} - \theta_s^2\mathbf{a} & &= -\theta_{ss}\mathbf{a} -\theta_s^2\mathbf{b}.
 \end{align}
+
+By substituting, we find that
+\begin{split}
+\mathbf{T}_{ss}& = N_{ss}\mathbf{a} + 2N_s(\theta_s\mathbf{b}) + N(\theta_{ss}\mathbf{b}-\theta_s^2\mathbf{a}) + H_{ss}\mathbf{b} + 2H_s(-\theta_s\mathbf{a}) + H(-\theta_{ss}\mathbf{a}-\theta_s^2\mathbf{b})\\
+               & = mm
+\end{split}
+\end{equation}
 
  
  
@@ -31,6 +37,7 @@ Exploiting the fact that $\mathbf{a}=(cos\theta, sen\theta)$ and $\mathbf{b}=(-s
  
  
 \end{document} 
+  
   
   
   
