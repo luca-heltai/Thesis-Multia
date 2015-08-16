@@ -1,5 +1,6 @@
 documentclass_12pt_article_usepackage_pdfsync__.tex
 documentclass_12pt_article_usepackage_pdfsync__1.tex
+begin_document_section_Componential_form__.tex
 begin_document_section_Matrix_form__.tex
 documentclass_12pt_article_usepackage_pdfsync__2.tex
 Block__360871439720115501.tex
