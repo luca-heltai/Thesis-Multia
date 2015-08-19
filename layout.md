@@ -1,4 +1,3 @@
-documentclass_12pt_article_usepackage_pdfsync__.tex
 documentclass_12pt_article_usepackage_pdfsync__3.tex
 begin_document_section_Some_highlights__.tex
 documentclass_12pt_article_usepackage_pdfsync__1.tex
