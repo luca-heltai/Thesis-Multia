@@ -1,4 +1,5 @@
 documentclass_12pt_article_usepackage_pdfsync__.tex
+begin_document_section_Some_highlights__.tex
 documentclass_12pt_article_usepackage_pdfsync__1.tex
 documentclass_article_usepackage_amsmath_begin__.tex
 begin_document_section_Matrix_form__.tex
