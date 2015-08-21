@@ -23,14 +23,18 @@
 \begin{document}
 \section{Introduction}
 
-Chen analyzed the problem of dynamic stability for Beck’s column, showing that equilibrium ca be lost by Hopf Bifurcation and that viscosity can cause destabilization. 
-
+Chen analyzed the problem of dynamic stability for Beck’s column, showing that equilibrium can be lost by Hopf Bifurcation and that viscosity can cause destabilization. 
+We generalize this problem by putting the column in a fluid environment by using an approximation of Resistive Force Theory. The new governing equations are derived and care is taken for    linearization . A discretization by Finite Element Method is considered. After several numerical tests and some accurate theoretical results, we aspect to observe the same bifurcation in absence of mass, and in absence of viscosity. (Per Luca: è ok? da controllare l'ultima frase.)
+\\\\
 The column, usually referred to as Beek's column, is clamped at one end and is subject to a follower force at the  free end.
 Such a force has the defining property that its magnitude is fixed but its direction must remain normal to the cross-section of the column at the end where this force is applied.
 \\\\
-We model it as an extensional shearable rod and we explore its planar, nonlinear dynamics by using the simple Cosserat model. 
-\\\\
-The method of Cosserat dynamics for elastic structures is employed since it can accommodate to a good approximation the nonlinear behavior of complex elastic structures composed of materials with different constitutive properties, variable geometry and damping characteristics. With arbitrary boundary conditions, the Cosserat theory is used to formulate a set of governing partial differential equations of motion in terms of the displacements and angular variables, describing the planar, nonlinear dynamics of an extensional rod. Bending about two principal axes, extension, shear and torsion are considered, and care is taken into account for all the nonlinear terms in the resulting equations.We derive, through variational principles, the equations of motion for two special cases:...
+In Section 1, we model it as an extensional shearable rod and we explore its planar, nonlinear dynamics by using the simple Cosserat model. 
+The method of Cosserat dynamics for elastic structures is employed since it can accommodate to a good approximation the nonlinear behavior of complex elastic structures composed of materials with different constitutive properties, variable geometry and damping characteristics. With arbitrary boundary conditions, the Cosserat theory is used to formulate a set of governing partial differential equations of motion in terms of the displacements and angular variables, describing the planar, nonlinear dynamics of an extensional rod. Bending about two principal axes, extension, shear and torsion are considered, and care is taken into account for all the nonlinear terms in the resulting equations. 
+In Section 2 we explicitly derive, through a generalization of Hamilton's Variational Principle, the equations of motion 
+
+
+
 Several numerical experiments follow.
 
 \section{Background on the special Cosserat model}
@@ -80,6 +84,7 @@ are the strain variables corresponding to the configuration.
 
 
 \end{document}
+  
   
   
   
