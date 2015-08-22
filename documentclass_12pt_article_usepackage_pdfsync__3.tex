@@ -22,8 +22,14 @@
 
 \begin{document}
 \section{Abstract}
-In 1986 M.Chen analyzed the problem of dynamic stability for Beck’s column, showing that equilibrium can be lost by Hopf Bifurcation and that viscosity can cause destabilization. 
-We generalize this problem by putting the column in a fluid environment by using an approximation of Resistive Force Theory. The new governing equations are derived and care is taken for    linearization . A discretization by Finite Element Method is considered. After several numerical tests and some accurate theoretical results, we aspect to observe the same bifurcation in absence of mass, and in absence of viscosity. (Per Luca: è ok? da controllare l'ultima frase.)
+Beck's column is a classical problem of structural mechanics, where a cantilever column is clamped on one end and it is subject to a compressive follower force. Beck's column is one of the simplest mechanical models which presents a Hopf's bifurcation when the follower load exceeds a critical value. 
+
+In the classical Beck's column problem, a dynamic instability leading to a Hopf bifurcation is observed only when one includes inertial terms in the formulation, together with viscoelastic terms in the elastic response of the column. In such cases, the viscoelastic terms are the ones responsible for the destabilization.  
+
+We study a variation of Beck's column, by considering the column immersed in a viscous fluid and we investigate the minimal conditions which trigger a Hopf bifurcation. In this generalized case, a Hopf bifurcation is observed also when neglecting both inertial and viscoelastic terms. Our observations indicate that viscous effects remain essential to trigger Hopf bifurcations, but they need not be of viscoelastic type. The presence of a viscous fluid surrounding the column allows instabilities to occur also when neglecting both inertial and viscoelastic effects, contrarily to what is commonly believed in the literature.
+
+Both the linearized and the fully nonlinear problems are analyzed, and a discretization by iso-geometric Finite Element Methods is presented, together with several numerical experiments. 
+
 
 \section{Introduction}
 The column, usually referred to as Beek's column, is clamped at one end and is subject to a follower force at the  free end.
@@ -88,6 +94,7 @@ are the strain variables corresponding to the configuration.
 
 
 \end{document}
+  
   
   
   
