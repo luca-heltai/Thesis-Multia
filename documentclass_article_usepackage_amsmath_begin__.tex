@@ -108,9 +108,21 @@ N &= \hat{N} + \tilde{A}\nu_t\\
 H &= \hat{N} + \tilde{B}\nu_t
 \end{align}
 should also be considered in the equations of motion. We finally get six equations in six variables, the three principal variables $\theta,\nu,\eta$ and the respective conjugate ones M, N, H.
-
+\begin{align}
+M_s + \nu H -\eta N - \rho I \theta_{tt}
+&= 0\\
+N_{ss} - 2\theta_sH_s - H\theta_{ss}- N\theta_s^2
+- \xi_{\parallel}\nu_t + \xi_{\parallel}\eta\theta_t - \rho S \nu_{tt} + 2\rho S \theta_t\eta_t + \rho S \eta\theta_{tt} + \rho S \nu\theta_t^2
+&= 0\\
+H_{ss} + 2\theta_sN_s + N\theta_{ss} - H\theta_s^2  - \xi_{\perp}\nu\theta_t - \xi_{\perp}\eta_t
+ - \rho S \eta_{tt} -\rho S 2\theta_t\nu_t -\rho S \nu\theta_{tt} + \rho S \eta\theta_t^2
+&= 0\\
+M - \hat{N} - \tilde{C}\nu_t &= 0\\
+N - \hat{N} - \tilde{A}\nu_t &= 0\\
+H - \hat{N} - \tilde{B}\nu_t &= 0
+\end{align}
 \subsection{Linearization and week formulation}
-Notice that what we find are strongly nonlinear equations.
+Notice that what we find are strongly nonlinear equations in almost all variables.
 We linearize them by splitting all nonlinear terms by freezing either $\nu, \eta, \theta_s$ or $\theta_t$ as it is more convenient. Including the constitutive equations, then for any $\bar{\nu}, \bar{\eta}, \bar{\theta}_s$ and $\bar{\theta}_t$ we can write the linear system in the independent variables $\theta, \nu, \eta$, H, N and M:
 
 \[
