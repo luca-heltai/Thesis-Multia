@@ -23,7 +23,7 @@ If we restrict the functions $\theta, \nu, \eta$, H, N ,M to live in V_h, we
 can rewrite the system of the discrete equations of motion in matrix form:
 
 \[\begin{pmatrix}
--\rhoI \mathbb{M} & 0 & 0 & 0 & 0 & 0 \\
+-\rho I \mathbb{M} & 0 & 0 & 0 & 0 & 0 \\
 \rho S \mathbb{M}^\bar{\eta} & -\rho S \mathbb{M} & 0 & 0 & 0 & 0 \\
 -\rho S \mathbb{M}^\bar{\nu} & 0 & \rho S \mathbb{M} & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 & 0 & 0 \\
@@ -37,7 +37,25 @@ can rewrite the system of the discrete equations of motion in matrix form:
 M_{tt}\\
 N_{tt}\\
 H_{tt}
-\end{pmatrix}\]
+\end{pmatrix}\\
+
++ \begin{pmatrix}
+0 & 0 & 0 & 0 & 0 & 0 \\
+\rho S \mathbb{M}^{\bar{\nu}\bar{\theta}_t} + \xi_{\parallel}\mathbb{M}^\bar{\eta} & - \xi_{\parallel}\mathbb{M} & 2\rho S \mathbb{M}^{\bar{\theta}_t} & 0 & 0 & 0 \\
+\rho S \mathbb{M}^{\bar{\eta}\bar{\theta}_t} -\xi_{\perp} \mathbb{M}^\bar{\nu} & -2\rho S \mathbb{M}^\bar{\theta}_t & - \xi_{perp}\mathbb{M} & 0 & 0 & 0 \\
+-\tilde{C}\mathbb{B} & 0 & 0 & 0 & 0 & 0 \\
+0 & -\tilde{A}\mathbb{M} & 0 & 0 & 0 & 0 \\
+0 & 0 & -\tilde{B}\mathbb{M} & 0 & 0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+\theta_{t}\\
+\nu_{t}\\
+\eta_{t}\\
+M_{t}\\
+N_{t}\\
+H_{t}
+\end{pmatrix}\\
+\]
 
 \end{document}
   
