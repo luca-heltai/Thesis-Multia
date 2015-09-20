@@ -9,4 +9,3 @@ begin_document_subsection_Stability_Analysis__.tex
 begin_document_section_The_case__.tex
 begin_document_section_Numerical_tests__.tex
 begin_document_section_Discussion_and__.tex
-documentclass_12pt_article_usepackage_pdfsync__2.tex
