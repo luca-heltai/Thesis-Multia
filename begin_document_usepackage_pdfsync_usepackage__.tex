@@ -53,7 +53,7 @@ $(\delta \theta, \delta\nu, \delta \eta, \delta M,\delta N, \delta H$) in V ,(fo
 %%
 \\
 %%
--\rho S (\bar{\nu}\theta_{tt},\delta\eta) + \rho S (\bar{\eta}\bar{\theta}_t\theta_t,\delta\eta) - \xi_{\perp}(\bar{\nu}\theta_t,\delta\eta) & - 2\rho S (\bar{\theta}_t \nu_t,\delta\eta) & \rho S (\eta_{tt},\delta\eta) - \xi_{\perp}(\eta_t,\delta\eta) & 0 & (\bar{\theta}_s N_s, \delta\eta) + ((\bar{\theta}_s N)_s,\delta\eta) & (H_{ss},\delta\eta) - (H\bar{\theta}_s^2,\delta\eta) 
+-\rho S (\bar{\nu}\theta_{tt},\delta\eta) + \rho S (\bar{\eta}\bar{\theta}_t\theta_t,\delta\eta) - \xi_{\perp}(\bar{\nu}\theta_t,\delta\eta) & - 2\rho S (\bar{\theta}_t \nu_t,\delta\eta) & -\rho S (\eta_{tt},\delta\eta) - \xi_{\perp}(\eta_t,\delta\eta) & 0 & (\bar{\theta}_s N_s, \delta\eta) + ((\bar{\theta}_s N)_s,\delta\eta) & (H_{ss},\delta\eta) - (H\bar{\theta}_s^2,\delta\eta) 
 %%
 \\
 %%
@@ -87,11 +87,11 @@ Next, we integrate by parts whenever it is convenient and we move all known term
 Finally, we get the week formulation of the equations of motion:
 
 \[\begin{pmatrix}
--\rho I (\theta_{tt},\delta\theta) & 0 & 0 & (M_s,\delta\theta) & (\bar{\eta}N,\delta\theta) & -(\bar{\nu}H,\delta\theta) 
+-\rho I (\theta_{tt},\delta\theta) & 0 & 0 & (M_s,\delta\theta) & -(\bar{\eta}N,\delta\theta) & (\bar{\nu}H,\delta\theta) 
 %%
 \\
 %%
-\rho S(\bar{\nu}\bar{\theta}_t\theta_t,\delta\nu) + \rho S (\bar{\eta}\theta_{tt},\delta\nu) + \xi_{\parallel}(\bar{\eta}\theta_t,\delta\nu) 
+\rho S(\bar{\nu}\bar{\theta}_t\theta_t,\delta\nu) - \rho S (\bar{\eta}\theta_{tt},\delta\nu) + \xi_{\parallel}(\bar{\eta}\theta_t,\delta\nu) 
 &
 -\rho S (\nu_{tt},\delta\nu) -\xi_{\parallel}(\nu_t,\delta\nu) & 2 \rho S(\bar{\theta}_t\eta_t,\delta\nu) 
 &
@@ -106,7 +106,7 @@ Finally, we get the week formulation of the equations of motion:
 -\rho S (\bar{\nu}\theta_{tt},\delta\eta) + \rho S (\bar{\eta}\bar{\theta}_t\theta_t,\delta\eta) - \xi_{\perp}(\bar{\nu}\theta_t,\delta\eta) 
 &
 - 2\rho S (\bar{\theta}_t \nu_t,\delta\eta) 
-& \rho S (\eta_{tt},\delta\eta) - \xi_{\perp}(\eta_t,\delta\eta) 
+& -\rho S (\eta_{tt},\delta\eta) - \xi_{\perp}(\eta_t,\delta\eta) 
 & 
 0 
 &
@@ -131,8 +131,8 @@ Finally, we get the week formulation of the equations of motion:
 0\\
 \langle N_s - \bar{\theta}_s H, \delta\nu \rangle \\
 \langle \bar{\theta}_s N + H_s,\delta\eta \rangle \\
--((C\alpha)_s,\delta M) - \langle C\theta_s\delta M \rangle\\
--(A_s,\delta N) \\
+-(C(\alpha)_s,\delta M) - \langle C\theta_s\delta M \rangle\\
+-(A,\delta N) \\
 0
 \end{pmatrix}\]
 
