@@ -160,60 +160,7 @@ M_s + \mathbf{e}_3\cdot(\mathbf{r}_s\cdot(N\mathbf{a} + H\mathbf{b}))=\rho I \th
 \]
 
 
-\subsubsection{Constraints}
-(lo tratterei più come una sezione a parte)
-We treat now the case of a incompressible viscoelastic rod,
-we write the Hamilton's Principle and derive the equations of motion for this case.
-We begin by imposing the constraints that the rod is inextensible and unsharable:
-\begin{eqnarray*}
-\nu(s,t)=1 \\ 
-\eta(s,t)=0.
-\end{eqnarray*}
-Let $\bar{N}=\bar{N}$(s,t) and $\bar{H}=\bar{H}$(s,t) denote the \emph{Lagrange multipliers} representing the reactive internal tractions (axial tension and shear force, respectively) enforcing the constraints.
-We give them the same letters as the components of contact force, because morally, from a physic point of view they have the same meaning.
-We define
-\[
-\mathcal{C}(s,t) = \bar{N}(\nu-1) + \bar{H}\eta
-\]
-and consider
-\[\int_{t_1}^{t_2} \int_{0}^{1} \delta \mathcal{C}\, ds \, dt = \int_{t_1}^{t_2} \int_{0}^{1} ((\bar{N}\mathbf{a})_s + (\bar{H}\mathbf{b})_s), \nu\bar{H}-\eta\bar{N})\cdot(\delta \mathbf{r},\delta\theta)
-\,ds \, dt.
-\]
-It can be trivially shown by replacing the equations of the constraints that the elastic potential density becomes
-\[ \mathcal{U}^{constr}(\mathbf{y}) = \frac{\cB}{2} (\mu -\alpha)^2,
-\]
-the internal dissipative energy density becomes
-\[ \mathcal{D}_{diss}^{constr}(\mathbf{y}_t) = \frac{\tilde{C}}{2}\left|\mu_t\right|^2,
-\]
-while the kinetic energy density and the external energy dissipation density remain the same.
-The Hamilton's Priciple then states
-\[\int_{t_1}^{t_2} \int_{0}^{1} \delta (\mathcal{T}-\mathcal{U^{constr}}) + \delta \mathcal{C} ds \, dt
-+ \int_{t_1}^{t_2} \int_{0}^{1} (\mathbf{Q}_{diss}^{constr} +
-\mathbf{Q}_{ext})\cdot (\delta \mathbf{r},\delta\theta)
-\, ds \, dt = 0
-\]
-for every perturbation $\delta \mathbf{y}$ defined on $[0,1]x[t_1,t_2]$ and vanishing at its boundary. By replacing the value of each term, we find
-\[\int_{t_1}^{t_2} \int_{0}^{1} \delta (\mathcal{T}-\mathcal{U^{constr}}) + \delta \mathcal{C} ds \, dt
-+ \int_{t_1}^{t_2} \int_{0}^{1} (\mathbf{Q}_{diss}^{constr} +
-\mathbf{Q}_{ext})\cdot (\delta \mathbf{r},\delta\theta)
-\, ds \, dt =
-\int_{t_1}^{t_2} \int_{0}^{1}
-         -(\ro S \mathbf{r}_{tt}
-         +(\cA(\nu -\nu_0)_s,\cC(\eta -\eta_0)_s)\\
-         + (\tilde_{A}(\nu_t)_s,\tilde_{B}(\eta_t)_s)
-         - (\xi_\parallel (\mathbf{r}_t\cdot\mathbf{\tau})\mathbf{\tau} + \xi_\perp (\mathbf{r}_t\cdot\mathbf{P})\mathbf{P} + (\bar{N}\mathbf{a})_s + (\bar{H}\mathbf{b})_s) )
-         \cdot\delta\mathbf{r}\,ds\,dt
-         + \int_{t_1}^{t_2} \int_{0}^{1}
-         (-\ro I \theta_{tt}
-         + \cB(\mu-\alpha)_s 
-         + \tilde_{C}(\mu_t)_s)
-         +\nu\bar{N}-\eta\bar{H})
-         \cdot\delta\theta \,ds\,dt
-\]
-and the equations of motion become
-\[ (\bar{N}\mathbf{a} + \bar{H}\mathbf{b})_s - (\xi_\parallel (\mathbf{r}_t\cdot\mathbf{\tau})\mathbf{\tau} + \xi_\perp (\mathbf{r}_t\cdot\mathbf{P})\mathbf{P}) = \rho S \mathbf{r}_{tt}\\
-M_s + \mathbf{e}_3\cdot(\mathbf{r}_s\cdot(\bar{N}\mathbf{a} + \bar{H}\mathbf{b}))=\rho I \theta_{tt}
-\]
+
 
 
 
