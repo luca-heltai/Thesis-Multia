@@ -9,11 +9,25 @@ Notice that what we find are strongly nonlinear equations in almost all variable
 We linearize them by splitting all nonlinear terms by freezing either $\nu, \eta, \theta_s$ or $\theta_t$ as it is more convenient. Then for any $\bar{\nu}, \bar{\eta}, \bar{\theta}_s$ and $\bar{\theta}_t$ we can write the linear system in the independent variables $\theta, \nu, \eta$, M, N and H:
 
 \[\begin{pmatrix}
--\rho I \theta_{tt} & 0 & 0 & M_s & -\bar{\eta}N & \bar{\nu}H \\
-\rho S\bar{\nu}\bar{\theta}_t\theta_t + \rho S \bar{\eta}\theta_{tt} + \xi_{\parallel}\bar{\eta}\theta_t & -\rho S \nu_{tt} -\xi_{\parallel}\nu_t & 2 \rho S\bar{\theta}_t\eta_t & 0 & N_{ss} - N\bar{\theta}_s^2 & -\bar{\theta}_s H_s - (\bar{\theta}_s H)_s \\
--\rho S \bar{\nu}\theta_{tt} + \rho S \bar{\eta}\bar{\theta}_t\theta_t - \xi_{\perp}\bar{\nu}\theta_t & - 2\rho S \bar{\theta}_t \nu_t & \rho S \eta_{tt} - \xi_{\perp}\eta_t & 0 & \bar{\theta}_s N_s + (\bar{\theta}_s N)_s & H_{ss}-H\bar{\theta}_s^2 \\
--(C\theta_s)_s -\tilde{C}(\theta_s)_t& 0 & 0 & M & 0 & 0 \\
-0 & -(A\nu)_s -\tilde{A}\nu_t & 0 & 0 & N & 0 \\
+-\rho I \theta_{tt} & 0 & 0 & M_s & -\bar{\eta}N & \bar{\nu}H %%
+\\
+%%
+\rho S\bar{\nu}\bar{\theta}_t\theta_t + \rho S \bar{\eta}\theta_{tt} + \xi_{\parallel}\bar{\eta}\theta_t & -\rho S \nu_{tt} -\xi_{\parallel}\nu_t & 2 \rho S\bar{\theta}_t\eta_t & 0 & N_{ss} - N\bar{\theta}_s^2 & -\bar{\theta}_s H_s - (\bar{\theta}_s H)_s 
+%%
+\\
+%%
+-\rho S \bar{\nu}\theta_{tt} + \rho S \bar{\eta}\bar{\theta}_t\theta_t - \xi_{\perp}\bar{\nu}\theta_t & - 2\rho S \bar{\theta}_t \nu_t & - \rho S \eta_{tt} - \xi_{\perp}\eta_t & 0 & \bar{\theta}_s N_s + (\bar{\theta}_s N)_s & H_{ss}-H\bar{\theta}_s^2 
+%%
+\\
+%%
+-(C\theta_s)_s -\tilde{C}(\theta_s)_t& 0 & 0 & M & 0 & 0 
+%%
+\\
+%%
+0 & -(A\nu)_s -\tilde{A}\nu_t & 0 & 0 & N & 0 
+%%
+\\
+%%
 0 & 0 & -(B\eta)_s - \tilde{B}\eta_t & 0 & 0 & H 
 \end{pmatrix}
 \\ =
@@ -30,11 +44,26 @@ We multiply the six equations by test functions
 $(\delta \theta, \delta\nu, \delta \eta, \delta M,\delta N, \delta H$) in V ,(for now arbitrary), and we integrate from 0 to 1: 
 
 \[\begin{pmatrix}
--\rho I (\theta_{tt},\delta\theta) & 0 & 0 & (M_s,\delta\theta) & (\bar{\eta}N,\delta\theta) & -(\bar{\nu}H,\delta\theta) \\
-\rho S(\bar{\nu}\bar{\theta}_t\theta_t,\delta\nu) + \rho S (\bar{\eta}\theta_{tt},\delta\nu) + \xi_{\parallel}(\bar{\eta}\theta_t,\delta\nu) & -\rho S (\nu_{tt},\delta\nu) -\xi_{\parallel}(\nu_t,\delta\nu) & 2 \rho S(\bar{\theta}_t\eta_t,\delta\nu) & 0 & (N_{ss},\delta\nu) - (N\bar{\theta}_s^2,\delta\nu) & -(\bar{\theta}_s H_s,\delta\nu) - ((\bar{\theta}_s H)_s,\delta\nu) \\
--\rho S (\bar{\nu}\theta_{tt},\delta\eta) + \rho S (\bar{\eta}\bar{\theta}_t\theta_t,\delta\eta) - \xi_{\perp}(\bar{\nu}\theta_t,\delta\eta) & - 2\rho S (\bar{\theta}_t \nu_t,\delta\eta) & \rho S (\eta_{tt},\delta\eta) - \xi_{\perp}(\eta_t,\delta\eta) & 0 & (\bar{\theta}_s N_s, \delta\eta) + ((\bar{\theta}_s N)_s,\delta\eta) & (H_{ss},\delta\eta) - (H\bar{\theta}_s^2,\delta\eta) \\
--((C\theta_s)_s,\delta M) -\tilde{C}((\theta_s)_t,\delta M) & 0 & 0 & (M, \delta M) & 0 & 0 \\
-0 & -((A\nu)_s,\delta N) -\tilde{A}(\nu_t,\delta N) & 0 & 0 & (N, \delta N) & 0 \\
+-\rho I (\theta_{tt},\delta\theta) & 0 & 0 & (M_s,\delta\theta) & (\bar{\eta}N,\delta\theta) & -(\bar{\nu}H,\delta\theta) 
+%%
+\\
+%%
+\rho S(\bar{\nu}\bar{\theta}_t\theta_t,\delta\nu) + \rho S (\bar{\eta}\theta_{tt},\delta\nu) + \xi_{\parallel}(\bar{\eta}\theta_t,\delta\nu) & -\rho S (\nu_{tt},\delta\nu) -\xi_{\parallel}(\nu_t,\delta\nu) & 2 \rho S(\bar{\theta}_t\eta_t,\delta\nu) & 0 & (N_{ss},\delta\nu) - (N\bar{\theta}_s^2,\delta\nu) & -(\bar{\theta}_s H_s,\delta\nu) - ((\bar{\theta}_s H)_s,\delta\nu) 
+%%
+\\
+%%
+-\rho S (\bar{\nu}\theta_{tt},\delta\eta) + \rho S (\bar{\eta}\bar{\theta}_t\theta_t,\delta\eta) - \xi_{\perp}(\bar{\nu}\theta_t,\delta\eta) & - 2\rho S (\bar{\theta}_t \nu_t,\delta\eta) & \rho S (\eta_{tt},\delta\eta) - \xi_{\perp}(\eta_t,\delta\eta) & 0 & (\bar{\theta}_s N_s, \delta\eta) + ((\bar{\theta}_s N)_s,\delta\eta) & (H_{ss},\delta\eta) - (H\bar{\theta}_s^2,\delta\eta) 
+%%
+\\
+%%
+-((C\theta_s)_s,\delta M) -\tilde{C}((\theta_s)_t,\delta M) & 0 & 0 & (M, \delta M) & 0 & 0 
+%%
+\\
+%%
+0 & -((A\nu)_s,\delta N) -\tilde{A}(\nu_t,\delta N) & 0 & 0 & (N, \delta N) & 0 
+%%
+\\
+%%
 0 & 0 & -((B\eta)_s,\delta H) - \tilde{B}(\eta_t. \delta H) & 0 & 0 & (H, \delta H) 
 \end{pmatrix}
 \\ =
