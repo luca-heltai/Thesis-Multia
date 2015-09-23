@@ -1,19 +1,54 @@
 \begin{document}
-\section{Week formulation and matrix form of the equations of motion}
-
-We multiply the six equations by test functions
-$(\delta \theta, \delta\nu, \delta \eta, \delta M,\delta N, \delta H$) in V ,(for now arbitrary), and we integrate from 0 to 1: 
+\subsection{Week formulation and matrix form of the equations of motion}
+What we find are strongly nonlinear equations in almost all variables.
+We linearize them by splitting all nonlinear terms by freezing either $\nu, \eta, \theta_s$ or $\theta_t$ as it is more convenient. Then for any $\bar{\nu}, \bar{\eta}, \bar{\theta}_s$ and $\bar{\theta}_t$ we can write the linear system in the independent variables $\theta, \nu, \eta$, \tilde{M}, \tilde{N} and \tilde{H}:
 
 \[\begin{pmatrix}
--\rho I (\theta_{tt},\delta\theta) & 0 & 0 & (M_s,\delta\theta) & -(\bar{\eta}N,\delta\theta) & (\bar{\nu}H,\delta\theta) 
+-\rho I \theta_{tt} & 0 & 0 & M_s & -\bar{\eta}\tilde{N} & \bar{\nu}\tilde{H} %%
+\\
+%%
+\rho S\bar{\nu}\bar{\theta}_t\theta_t + \rho S \bar{\eta}\theta_{tt} + \xi_{\parallel}\bar{\eta}\theta_t & -\rho S \nu_{tt} -\xi_{\parallel}\nu_t & 2 \rho S\bar{\theta}_t\eta_t & 0 &    \tilde{N}_{ss} - \tilde{N}\bar{\theta}_s^2 & -\bar{\theta}_s \tilde{H}_s - (\bar{\theta}_s \tilde{H})_s 
 %%
 \\
 %%
-\rho S(\bar{\nu}\bar{\theta}_t\theta_t,\delta\nu) + \rho S (\bar{\eta}\theta_{tt},\delta\nu) + \xi_{\parallel}(\bar{\eta}\theta_t,\delta\nu) & -\rho S (\nu_{tt},\delta\nu) -\xi_{\parallel}(\nu_t,\delta\nu) & 2 \rho S(\bar{\theta}_t\eta_t,\delta\nu) & 0 & (N_{ss},\delta\nu) - (N\bar{\theta}_s^2,\delta\nu) & -(\bar{\theta}_s H_s,\delta\nu) - ((\bar{\theta}_s H)_s,\delta\nu) 
+-\rho S \bar{\nu}\theta_{tt} + \rho S \bar{\eta}\bar{\theta}_t\theta_t - \xi_{\perp}\bar{\nu}\theta_t & - 2\rho S \bar{\theta}_t \nu_t & - \rho S \eta_{tt} - \xi_{\perp}\eta_t & 0 & \bar{\theta}_s \tilde{N}_s + (\bar{\theta}_s \tilde{N})_s & \tilde{H}_{ss}-\tilde{H}\bar{\theta}_s^2 
 %%
 \\
 %%
--\rho S (\bar{\nu}\theta_{tt},\delta\eta) + \rho S (\bar{\eta}\bar{\theta}_t\theta_t,\delta\eta) - \xi_{\perp}(\bar{\nu}\theta_t,\delta\eta) & - 2\rho S (\bar{\theta}_t \nu_t,\delta\eta) & -\rho S (\eta_{tt},\delta\eta) - \xi_{\perp}(\eta_t,\delta\eta) & 0 & (\bar{\theta}_s N_s, \delta\eta) + ((\bar{\theta}_s N)_s,\delta\eta) & (H_{ss},\delta\eta) - (H\bar{\theta}_s^2,\delta\eta) 
+-C\theta_s -\tilde{C}(\theta_s)_t & 0 & 0 & M & 0 & 0 
+%%
+\\
+%%
+0 & -A\nu -\tilde{A}\nu_t & 0 & 0 & \tilde{N} & 0 
+%%
+\\
+%%
+0 & 0 & - B\eta - \tilde{B}\eta_t & 0 & 0 & \tilde{H} 
+\end{pmatrix}
+\\ =
+\begin{pmatrix}
+0\\
+0\\
+0\\
+-C\alpha\\
+-A\\
+0
+\end{pmatrix}\]
+
+
+We multiply the six equations by test functions
+$(\delta \theta, \delta\nu, \delta \eta, \delta M,\delta \tilde{N}, \delta \tilde{H}$) in V ,(for now arbitrary), and we integrate from 0 to 1: 
+
+\[\begin{pmatrix}
+-\rho I (\theta_{tt},\delta\theta) & 0 & 0 & (M_s,\delta\theta) & -(\bar{\eta}\tilde{N},\delta\theta) & (\bar{\nu}\tilde{H},\delta\theta) 
+%%
+\\
+%%
+\rho S(\bar{\nu}\bar{\theta}_t\theta_t,\delta\nu) + \rho S (\bar{\eta}\theta_{tt},\delta\nu) + \xi_{\parallel}(\bar{\eta}\theta_t,\delta\nu) & -\rho S (\nu_{tt},\delta\nu) -\xi_{\parallel}(\nu_t,\delta\nu) & 2 \rho S(\bar{\theta}_t\eta_t,\delta\nu) & 0 & (\tilde{N}_{ss},\delta\nu) - (\tilde{N}\bar{\theta}_s^2,\delta\nu) & -(\bar{\theta}_s \tilde{H}_s,\delta\nu) - ((\bar{\theta}_s \tilde{H})_s,\delta\nu) 
+%%
+\\
+%%
+-\rho S (\bar{\nu}\theta_{tt},\delta\eta) + \rho S (\bar{\eta}\bar{\theta}_t\theta_t,\delta\eta) - \xi_{\perp}(\bar{\nu}\theta_t,\delta\eta) & - 2\rho S (\bar{\theta}_t \nu_t,\delta\eta) & -\rho S (\eta_{tt},\delta\eta) - \xi_{\perp}(\eta_t,\delta\eta) & 0 & (\bar{\theta}_s \tilde{N}_s, \delta\eta) + ((\bar{\theta}_s \tilde{N})_s,\delta\eta) & (\tilde{H}_{ss},\delta\eta) - (\tilde{H}\bar{\theta}_s^2,\delta\eta) 
 %%
 \\
 %%
@@ -47,7 +82,7 @@ Next, we integrate by parts whenever it is convenient and we move all known term
 Finally, we get the week formulation of the equations of motion:
 
 \[\begin{pmatrix}
--\rho I (\theta_{tt},\delta\theta) & 0 & 0 & (M_s,\delta\theta) & -(\bar{\eta}N,\delta\theta) & (\bar{\nu}H,\delta\theta) 
+-\rho I (\theta_{tt},\delta\theta) & 0 & 0 & (M_s,\delta\theta) & -(\bar{\eta}\tilde{N},\delta\theta) & (\bar{\nu}\tilde{H},\delta\theta) 
 %%
 \\
 %%
@@ -57,9 +92,9 @@ Finally, we get the week formulation of the equations of motion:
 &
 0 
 &
--(N_s,\delta\nu_s) - (\bar{\theta}_s^2 N,\delta\nu) 
+-(\tilde{N}_s,\delta\nu_s) - (\bar{\theta}_s^2 \tilde{N},\delta\nu) 
 &
--(\bar{\theta}_s H_s,\delta\nu) + ((\bar{\theta}_s H),\delta\nu_s)
+-(\bar{\theta}_s \tilde{H}_s,\delta\nu) + ((\bar{\theta}_s \tilde{H}),\delta\nu_s)
 %%
 \\
 %%
@@ -70,9 +105,9 @@ Finally, we get the week formulation of the equations of motion:
 & 
 0 
 &
-(\bar{\theta}_s N_s, \delta\eta) - ((\bar{\theta}_s N),\delta\eta_s) 
+(\bar{\theta}_s \tilde{N}_s, \delta\eta) - ((\bar{\theta}_s \tilde{N}),\delta\eta_s) 
 &
--(H_s,\delta\eta_s) - (\bar{\theta}_s^2 H,\delta\eta)
+-(\tilde{H}_s,\delta\eta_s) - (\bar{\theta}_s^2 \tilde{H},\delta\eta)
 %%
 \\
 %%
