@@ -24,36 +24,29 @@ The \emph{elastica} theory that stays behind our framework is based on these two
 \[
 M(s,t) = C(\mu(s,t) − \alpha(s,t)),
 \]
-where C is the \emph{bending stiffness} and $\alpha$ is the \emph{spontaneous curvature}. We introduce therefore the elastic potential density 
+where C is the \emph{bending stiffness} and $\alpha$ is the \emph{spontaneous curvature}. We call M the \emph{active moment}. We introduce therefore the elastic potential density 
 \[ \mathcal{U} = \frac{C}{2}(\mu(s,t) − \alpha(s,t))^2,\]
 that models the fact that we are dealing with an inextensible and unshearable elastic medium which can actively vary its spontaneous curvature.
-The kinetic energy density is the same as in the viscoelastic case:
+The kinetic energy density and the external energy dissipation density remain the same as in the viscoelastic case:
 \[
-\mathcal{T} = \frac{\rho S}{2}\mathbb{r}_t \cdot \mathbb{r}_t + \frac{\rho I}{2}\mathbb{r}_t \cdot \theta_t^2
+\mathcal{T} = \frac{\rho S}{2}\mathbf{r}_t \cdot \mathbf{r}_t + \frac{\rho I}{2}\theta_t^2
 \]
+%%
+\[ 
+\mathcal{D}_{ext}= -(\xi_\parallel\left|\mathbf{r}_t\cdot\mathbf{a}\right|^2 + \xi_\perp \left|\mathbf{r}_t\cdot\mathbf{n}\right|^2),
+\]
+
 
 \subsection{Derivation of the Equations of Motion}
-
-Let $\bar{N}=\bar{N}$(s,t) and $\bar{H}=\bar{H}$(s,t) denote the 
-\[
-\mathcal{C}(s,t) = \bar{N}(\nu-1) + \bar{H}\eta
-\]
-and consider
-\[\int_{t_1}^{t_2} \int_{0}^{1} \delta \mathcal{C}\, ds \, dt = \int_{t_1}^{t_2} \int_{0}^{1} ((\bar{N}\mathbf{a})_s + (\bar{H}\mathbf{b})_s), \nu\bar{H}-\eta\bar{N})\cdot(\delta \mathbf{r},\delta\theta)
-\,ds \, dt.
-\]
-
-\[ \mathcal{U}^{constr}(\mathbf{y}) = \frac{\cB}{2} (\mu -\alpha)^2,
-\]
-
-while the kinetic energy density and the external energy dissipation density remain the same.
+We derive the equations of motion through Hamilton's Principle for a constrained system that involves both conservative and nonconservative forces states:
 The Hamilton's Priciple then states
 \[\int_{t_1}^{t_2} \int_{0}^{1} \delta (\mathcal{T}-\mathcal{U^{constr}}) + \delta \mathcal{C} ds \, dt
 + \int_{t_1}^{t_2} \int_{0}^{1} (\mathbf{Q}_{diss}^{constr} +
 \mathbf{Q}_{ext})\cdot (\delta \mathbf{r},\delta\theta)
 \, ds \, dt = 0
 \]
-for every perturbation $\delta \mathbf{y}$ defined on $[0,1]x[t_1,t_2]$ and vanishing at its boundary. By replacing the value of each term, we find
+for every perturbation $\delta \mathbf{y}$ defined on $[0,1]x[t_1,t_2]$. By replacing the value of each term, the equations of motion finally read:
+
 \[\int_{t_1}^{t_2} \int_{0}^{1} \delta (\mathcal{T}-\mathcal{U^{constr}}) + \delta \mathcal{C} ds \, dt
 + \int_{t_1}^{t_2} \int_{0}^{1} (\mathbf{Q}_{diss}^{constr} +
 \mathbf{Q}_{ext})\cdot (\delta \mathbf{r},\delta\theta)
@@ -72,8 +65,9 @@ for every perturbation $\delta \mathbf{y}$ defined on $[0,1]x[t_1,t_2]$ and vani
          \cdot\delta\theta \,ds\,dt
 \]
 and the equations of motion become
-\[ (\bar{N}\mathbf{a} + \bar{H}\mathbf{b})_s - (\xi_\parallel (\mathbf{r}_t\cdot\mathbf{\tau})\mathbf{\tau} + \xi_\perp (\mathbf{r}_t\cdot\mathbf{P})\mathbf{P}) = \rho S \mathbf{r}_{tt}\\
-M_s + \mathbf{e}_3\cdot(\mathbf{r}_s\cdot(\bar{N}\mathbf{a} + \bar{H}\mathbf{b}))=\rho I \theta_{tt}
+\[ (\tilde{T}_s- (\xi_\parallel (\mathbf{r}_t\cdot\mathbf{\tau})\mathbf{\tau} + \xi_\perp (\mathbf{r}_t\cdot\mathbf{P})\mathbf{P}) = \rho S \mathbf{r}_{tt}\\
+
+M_s + \mathbf{e}_3 \cdot(\mathbf{r}_s\cdot(\mathbf{\tilde{T}} =\rho I \theta_{tt}
 \]
 \subsection{Stability Analysis and Hopf Bifurcation}
 \end{document}
