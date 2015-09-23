@@ -3,7 +3,7 @@
 
 \\
 If an \emph{elastic} rod is constrained so that $\eta$ = 0 in all circumstances, then the rod is said to be \emph{unshearable}.
-We construct such a theory by simply defining $\hat{\eta}$ = 0, where ($\hat{\nu},\hat{\eta},\hat{\mu}$) is the global inverse of ($\hat{N},\hat{H},\hat{M}$). Actually, it can be easily shown that under the right assumptions (Per Luca: da aggiungerle e sviluppare l'argomento) the constitutive equations 
+We construct such a theory by simply defining $\hat{\eta}$=0, where ($\hat{\nu},\hat{\eta},\hat{\mu}$) is the global inverse of ($\hat{N},\hat{H},\hat{M}$). Actually, it can be easily shown that under the right assumptions (Per Luca: da aggiungerle e sviluppare l'argomento) the constitutive equations 
 \[  N (s,t)=  \hat{N}(\nu (s,t),\eta (s,t))
 \]
 \[  H (s,t)=  \hat{H}(\nu (s,t),\eta (s,t)) 
@@ -19,14 +19,20 @@ that define an elastic rod, are equivalent to the constitutive equations
 \]
 In this case, H, which is the Lagrange multiplier corresponding to this constraint, is not defined constitutively by any version of the above equations. It is just an unknown of any problem in which it appears.
 \\
-Likewise, if the rod is constrained so that $\nu$ = 1, then the rod is said to be \emph{inextensible}, and N is (a Lagrange multiplier) not defined constitutively.\\
+Likewise, if the rod is constrained so that $\nu$=1, then the rod is said to be \emph{inextensible}, and N is (a Lagrange multiplier) not defined constitutively.\\
 The \emph{elastica} theory that stays behind our framework is based on these two constraints and on the constitutive equation that says that M is linear in the change in $\mu$:
 \[
-M(s,t) = C(\mu(s,t) − \alpha(s,t)).
+M(s,t) = C(\mu(s,t) − \alpha(s,t)),
+\]
+where C is the \emph{bending stiffness} and $\alpha$ is the \emph{spontaneous curvature}. We introduce therefore the elastic potential density 
+\[ \mathcal{U} = \frac{C}{2}(\mu(s,t) − \alpha(s,t))^2, that models the fact that we are dealing with an inextensible and unshearable elastic medium which can actively vary its spontaneous curvature.
+\]
+The kinetic energy density is the same as in the viscoelastic case:
+\[
+\mathcal{T} = frac{\rho S}{2}\mathbb{r}_t \cdot \mathbb{r}_t + frac{\rho I}{2}\mathbb{r}_t \cdot \theta_t^2
 \]
 
-
-\subsection{Governing equations}
+\subsection{Derivation of the Equations of Motion}
 
 Let $\bar{N}=\bar{N}$(s,t) and $\bar{H}=\bar{H}$(s,t) denote the 
 \[
@@ -36,12 +42,10 @@ and consider
 \[\int_{t_1}^{t_2} \int_{0}^{1} \delta \mathcal{C}\, ds \, dt = \int_{t_1}^{t_2} \int_{0}^{1} ((\bar{N}\mathbf{a})_s + (\bar{H}\mathbf{b})_s), \nu\bar{H}-\eta\bar{N})\cdot(\delta \mathbf{r},\delta\theta)
 \,ds \, dt.
 \]
-It can be trivially shown by replacing the equations of the constraints that the elastic potential density becomes
+
 \[ \mathcal{U}^{constr}(\mathbf{y}) = \frac{\cB}{2} (\mu -\alpha)^2,
 \]
-the internal dissipative energy density becomes
-\[ \mathcal{D}_{diss}^{constr}(\mathbf{y}_t) = \frac{\tilde{C}}{2}\left|\mu_t\right|^2,
-\]
+
 while the kinetic energy density and the external energy dissipation density remain the same.
 The Hamilton's Priciple then states
 \[\int_{t_1}^{t_2} \int_{0}^{1} \delta (\mathcal{T}-\mathcal{U^{constr}}) + \delta \mathcal{C} ds \, dt
