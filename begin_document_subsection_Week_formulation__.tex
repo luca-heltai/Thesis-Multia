@@ -15,15 +15,15 @@ We linearize them by splitting all nonlinear terms by freezing either $\nu, \eta
 %%
 \\
 %%
--C\theta_s -\tilde{C}(\theta_s)_t & 0 & 0 & M & 0 & 0 
+-C\theta_s & 0 & 0 & M & 0 & 0 
 %%
 \\
 %%
-0 & -A\nu -\tilde{A}\nu_t & 0 & 0 & \tilde{N} & 0 
+0 & 0 & 0 & 0 & \tilde{N}(\bar{\nu}-1) & 0 
 %%
 \\
 %%
-0 & 0 & - B\eta - \tilde{B}\eta_t & 0 & 0 & \tilde{H} 
+0 & 0 & 0 & 0 & 0 & \tilde{H}\bar{\eta} 
 \end{pmatrix}
 \\ =
 \begin{pmatrix}
@@ -52,15 +52,15 @@ $(\delta \theta, \delta\nu, \delta \eta, \delta M,\delta \tilde{N}, \delta \tild
 %%
 \\
 %%
--(C\theta_s,\delta M) -\tilde{C}((\theta_s)_t,\delta M) & 0 & 0 & (M, \delta M) & 0 & 0 
+-(C\theta_s,\delta M) & 0 & 0 & (M, \delta M) & 0 & 0 
 %%
 \\
 %%
-0 & -(A\nu,\delta N) -\tilde{A}(\nu_t,\delta N) & 0 & 0 & (N, \delta N) & 0 
+0 & 0 & 0 & 0 & ((\bar{\nu}-1)\tilde{N}, \delta\tilde{N}) & 0 
 %%
 \\
 %%
-0 & 0 & -(B\eta,\delta H) - \tilde{B}(\eta_t. \delta H) & 0 & 0 & (H, \delta H) 
+0 & 0 & 0 & 0 & 0 & (\bar{\eta}\tilde{H}, \delta \tilde{H}) 
 \end{pmatrix}
 \\ =
 \begin{pmatrix}
@@ -111,15 +111,15 @@ Finally, we get the week formulation of the equations of motion:
 %%
 \\
 %%
--(C\theta_s,\delta M) -\tilde{C}((\theta_s)_t,\delta M) & 0 & 0 & (M, \delta M) & 0 & 0 
+-(C\theta_s,\delta M) & 0 & 0 & (M, \delta M) & 0 & 0 
 %%
 \\
 %%
-0 & -(A\nu,\delta N) - \tilde{A}(\nu_t,\delta N) & 0 & 0 & (N, \delta N) & 0 
+0 & 0 0 & 0 & 0 & ((\bar\nu-1)\tilde{N}, \delta \tilde{N}) & 0 
 %%
 \\
 %%
-0 & 0 & -(B\eta,\delta H) - \tilde{B}(\eta_t, \delta H) & 0 & 0 & (H, \delta H) 
+0 & 0 & 0 & 0 & 0 & (\bar{\eta}\tilde{H}, \delta \tilde{H}) 
 \end{pmatrix}
 \\ =
 \begin{pmatrix}
