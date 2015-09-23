@@ -33,39 +33,23 @@ The kinetic energy density and the external energy dissipation density remain th
 \]
 %%
 \[ 
-\mathcal{D}_{ext}= -(\xi_\parallel\left|\mathbf{r}_t\cdot\mathbf{a}\right|^2 + \xi_\perp \left|\mathbf{r}_t\cdot\mathbf{n}\right|^2),
+\delta W_{visc}= -(\xi_\parallel\left|\mathbf{r}_t\cdot\mathbf{a}\right|^2 + \xi_\perp \left|\mathbf{r}_t\cdot\mathbf{b}\right|^2),
 \]
 
 
 \subsection{Derivation of the Equations of Motion}
 We derive the equations of motion through Hamilton's Principle for a constrained system that involves both conservative and nonconservative forces states:
 The Hamilton's Priciple then states
-\[\int_{t_1}^{t_2} \int_{0}^{1} \delta (\mathcal{T}-\mathcal{U^{constr}}) + \delta \mathcal{C} ds \, dt
-+ \int_{t_1}^{t_2} \int_{0}^{1} (\mathbf{Q}_{diss}^{constr} +
-\mathbf{Q}_{ext})\cdot (\delta \mathbf{r},\delta\theta)
-\, ds \, dt = 0
-\]
-for every perturbation $\delta \mathbf{y}$ defined on $[0,1]x[t_1,t_2]$. By replacing the value of each term, the equations of motion finally read:
 
-\[\int_{t_1}^{t_2} \int_{0}^{1} \delta (\mathcal{T}-\mathcal{U^{constr}}) + \delta \mathcal{C} ds \, dt
-+ \int_{t_1}^{t_2} \int_{0}^{1} (\mathbf{Q}_{diss}^{constr} +
-\mathbf{Q}_{ext})\cdot (\delta \mathbf{r},\delta\theta)
-\, ds \, dt =
-\int_{t_1}^{t_2} \int_{0}^{1}
-         -(\ro S \mathbf{r}_{tt}
-         +(\cA(\nu -\nu_0)_s,\cC(\eta -\eta_0)_s)\\
-         + (\tilde_{A}(\nu_t)_s,\tilde_{B}(\eta_t)_s)
-         - (\xi_\parallel (\mathbf{r}_t\cdot\mathbf{\tau})\mathbf{\tau} + \xi_\perp (\mathbf{r}_t\cdot\mathbf{P})\mathbf{P} + (\bar{N}\mathbf{a})_s + (\bar{H}\mathbf{b})_s) )
-         \cdot\delta\mathbf{r}\,ds\,dt
-         + \int_{t_1}^{t_2} \int_{0}^{1}
-         (-\ro I \theta_{tt}
-         + \cB(\mu-\alpha)_s 
-         + \tilde_{C}(\mu_t)_s)
-         +\nu\bar{N}-\eta\bar{H})
-         \cdot\delta\theta \,ds\,dt
+\[\int_{t_1}^{t_2} \int_{0}^{1} \delta (\mathcal{T}-\mathcal{U}) + \delta W_{visc} + \delta \mathcal{C} ds \,dt
+
 \]
-and the equations of motion become
-\[ (\tilde{T}_s- (\xi_\parallel (\mathbf{r}_t\cdot\mathbf{\tau})\mathbf{\tau} + \xi_\perp (\mathbf{r}_t\cdot\mathbf{P})\mathbf{P}) = \rho S \mathbf{r}_{tt}\\
+for every perturbation $\delta \mathbf{y}$ defined on $[0,1]x[t_1,t_2]$. 
+\\
+If we replace the value of each term, and define $\mathbf{T}$ = $\tilde{N}\mathbf{a}$ + $\tilde{H}\mathbf{b}$  the equations of motion finally read:
+
+
+\[ (\tilde{T}_s- (\xi_\parallel (\mathbf{r}_t\cdot\mathbf{a})\mathbf{a} + \xi_\perp (\mathbf{r}_t\cdot\mathbf{b})\mathbf{b}) = \rho S \mathbf{r}_{tt}\\
 
 M_s + \mathbf{e}_3 \cdot(\mathbf{r}_s\cdot(\mathbf{\tilde{T}} =\rho I \theta_{tt}
 \]
