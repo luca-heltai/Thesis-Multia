@@ -58,15 +58,19 @@ If we assume the rod to be viscoelastic, the constitutive equations to be consid
 where $\tilde{A}$, $\tilde{B}$, $\tilde{C}$ are positive constants.
 \\
 We may call H the \emph{shear force} and M the \emph{bending couple} (or \emph{moment}). When $\eta$ $\neq$0, there is no standard name for N.
-\\
-
-We model this by introducing the elastic potential density  as
-\[ \mathcal{U}(\mathbf{y}) = \frac{\cA}{2} (\nu - \nu_0)^2
-+ \frac{\cC}{2} (\eta - \eta_0 )^2
-+ \frac{\cB}{2} (\mu -\alpha)^2,
+\\\\
+The simplest functions satisfying the regularity conditions we can think of are:
+\[
+\hat{N}(s,t) = A(\nu(s,t) - 1))\\
+\hat{H}(s,t) =B\eta(s,t)\\
+\hat{M}(s,t) =C(\mu(s,t) - \alpha(s,t)),
 \]
-where $\alpha$ = $\alpha$(s,t) is \emph{spontaneous curvature}, $\nu$ = $\nu$(s,t) describes the stretch, $\eta$ = $\eta$(s,t) defines the shear strain and $\cA$, $\cB$, $\cC$ represent respectively the stretch stiffness, the bending stiffness and the shear stiffness. We assume that $\nu_0\equiv1$ and that $\eta_0\equiv0$.
-This formulation takes into account that we are dealing with a \emph{compressible} viscoelastic medium that has the ability to actively modify its spontaneous curvature.\\
+where A,B and C are constants. In this contest C has the meaning of the \emph{bending stiffness} , $\nu$ has the meaning of the \emph{bending strain} and $\alpha$ is the \emph{spontaneous curvature}
+We model this by introducing the elastic potential density  as
+\[ \mathcal{U}(\mathbf{y}) = \frac{A}{2} (\nu - \)^2
++ \frac{B}{2} \eta ^2
++ \frac{C}{2} (\mu -\alpha)^2,
+\]
 Tha Lagrangian density $\mathcal{L}$ of the system will therefore read
 \[ \mathcal{L}(\mathbf{y},\mathbf{y}_t)= \mathcal{T}(\mathbf{y}_t) - \mathcal{U}(\mathbf{y}).
 \]
