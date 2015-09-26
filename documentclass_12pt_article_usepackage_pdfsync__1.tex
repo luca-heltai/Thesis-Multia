@@ -65,37 +65,37 @@ The simplest functions satisfying the regularity conditions we can think of are:
 \hat{H}(s,t) =B\eta(s,t)\\
 \hat{M}(s,t) =C(\mu(s,t) - \alpha(s,t)),
 \]
-where A,B and C are constants. In this contest C has the meaning of the \emph{bending stiffness} , $\nu$ has the meaning of the \emph{bending strain} and $\alpha$ is the \emph{spontaneous curvature}
+where A,B and C are constants. In this contest C has the meaning of the \emph{bending stiffness} , $\nu$ has the meaning of the \emph{bending strain} and $\alpha$ is the \emph{spontaneous curvature}.
 We model this by introducing the elastic potential density  as
-\[ \mathcal{U}(\mathbf{y}) = \frac{A}{2} (\nu - \)^2
+\[ \mathcal{U}(\mathbf{y}) = \frac{A}{2} (\nu - 1)^2
 + \frac{B}{2} \eta ^2
 + \frac{C}{2} (\mu -\alpha)^2,
 \]
 Tha Lagrangian density $\mathcal{L}$ of the system will therefore read
 \[ \mathcal{L}(\mathbf{y},\mathbf{y}_t)= \mathcal{T}(\mathbf{y}_t) - \mathcal{U}(\mathbf{y}).
 \]
-$\bullet$\emph{The Virtual Work $\delta$W}. Along with the elastic potential we introduce the internal energy dissipation density  and the dissipative force associated as 
+$\bullet$\emph{The Virtual Work $\delta$W}. Along with the elastic potential we introduce the internal energy dissipation density due to the viscosity  of the column and the dissipative force associated as 
 \[ \mathcal{D}_{diss}(\mathbf{y}_t) = \frac{\tilde{A}}{2}\left|\nu_t\right|^2 + \frac{\tilde{B}}{2}\left|\eta_t\right|^2
 + \frac{\tilde{C}}{2}\left|\mu_t\right|^2,
 \]
 
 \[
-\mathbf{Q}_{diss}= (\tilde{A}(\nu_t)_s,\tilde{B}(\eta_t)_s,\tilde{C}(\mu_t)_s).
+\mathbf{Q}_{visc}= (\tilde{A}(\nu_t)_s,\tilde{B}(\eta_t)_s,\tilde{C}(\mu_t)_s).
 \]
 When immersed in a fluid,then the external energy dissipation density and the force applied by fluid on the rod can be modeled as
-\[ \mathcal{D}_{ext}(\mathbf{y}_t)= -(\xi_\parallel\left|\mathbf{r}_t\cdot\mathbf{a}\right|^2 + \xi_\perp \left|\mathbf{r}_t\cdot\mathbf{n}\right|^2),
+\[ \mathcal{D}_{fluid}(\mathbf{y}_t)= -(\xi_\parallel\left|\mathbf{r}_t\cdot\mathbf{a}\right|^2 + \xi_\perp \left|\mathbf{r}_t\cdot\mathbf{n}\right|^2),
 \]
 
-\[\mathbf{Q}_{ext} = -( \xi_\parallel (\mathbf{r}_t\otimes\mathbf{a})\mathbf{a} + \xi_\perp (\mathbf{r}_t\otimes\mathbf{n})\mathbf{n}),
+\[\mathbf{Q}_{fluid} = -( \xi_\parallel (\mathbf{r}_t\otimes\mathbf{a})\mathbf{a} + \xi_\perp (\mathbf{r}_t\otimes\mathbf{n})\mathbf{n}),
 \]
 where $\xi_\parallel$ and $\xi_\perp$ are local friction coefficients for tangential and normal motion, respectively.
 We deal with the dissipative forces by means of virtual work terms
-\[\delta W = \delta W_{diss} + \delta W_{ext} = (\mathbf{Q}_{diss}+\mathbf{Q}_{ext})\cdot\delta\mathbf{y}.
+\[\delta W = \delta W_{visc} + \delta W_{fluid} = (\mathbf{Q}_{visc}+\mathbf{Q}_{fluid})\cdot\delta\mathbf{y}.
 \]
 According to the Hamilton's Principle, a solution $\mathbf{y}$ must satisfy
 \[\int_{t_1}^{t_2} \int_{0}^{1} \delta \mathcal{L}+\delta W\, ds \, dt = 0
 \]
-for every perturbation $\delta \mathbf{y}$ defined on $[0,1]x[t_1,t_2]$ and vanishing at its boundary. We consider 
+for every perturbation $\delta \mathbf{y}$ defined on $[0,1]x[t_1,t_2]$. We consider 
 
 \begin{equation}
 \begin{split}
