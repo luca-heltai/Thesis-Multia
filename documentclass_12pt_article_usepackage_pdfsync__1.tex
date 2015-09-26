@@ -26,10 +26,10 @@
 \subsection{Governing equations}\label{Governing equations}
 \subsubsection{Derivation of the Equations of Motion through  Hamilton's Principle}
 $\bullet$\emph{The Lagrangian $\mathcal{L}$}. We define the kinetic energy density 
-\[ \mathcal{T}(\mathbf{y}_t) = \frac{\rho S}{2} \mathbf{r}_t \cdot \mathbf{r}_t + \frac{\rho I}{2}\theta_t ^2,
+\[ \mathcal{T}(\mathbf{r}_t, \theta_t) = \frac{\rho S}{2} \mathbf{r}_t \cdot \mathbf{r}_t + \frac{\rho I}{2}\theta_t ^2,
 \]
 where $\rho$S is the linear mass density and $\rho$I the linear moment of inertia.
-Under the action of forces, the elastic rod-like filament suffers deformations, which we have assumed to be planar. Whenever these deformations occur, there is a contact force
+Under the action of forces, the viscoelastic rod-like filament suffers deformations, which we have assumed to be planar. Whenever these deformations occur, there is a contact force
 $\mathbf{n}$(s,t) exerted by the material of [s,1] on that of [0,s). $\mathbf{n}$(s,t) is assumed to lie to the ($\mathbf{e}_1$,$\mathbf{e}$_2)-plane, so that it has the form
 \[  \mathbf{n}(s,t)= N(s,t) \mathbf{a}(s,t) + H(s,t)\mathbf{b} (s,t).
 \]
@@ -37,18 +37,29 @@ Let $\mathbf{m}$(s,t) be the contact couple exerted by the material of [s,1] on 
 \[ 
 \mathbf{m}(s,t) = M(s,t)\mathbf{e}_3.
 \]
+\\\\
+\textbf{Consitutive equations} 
+The rod is called elastic if there are constitutive functions $\hat{N}, \hat{H}, \hat{M}$ such that
+\[  N (s,t)=  \hat{N}(\nu (s,t),\eta (s,t))
+\]
+\[  H (s,t)=  \hat{H}(\nu (s,t),\eta (s,t)) 
+\]
+\[  M (s,t)=  \hat{M}(\nu (s,t),\eta (s,t), \mu(s,t)),
+\]
 
-We assume that the material of the rod is viscoelastic causing internal energy dissipation and having constitutive equations of the form
+where $\hat{N}$,$\hat{H}$,$\hat{M}$ are given functions on (0,$\infty$)x$\mathbb{R}$x$\mathbb{R}$ satisfying sufficient regularity conditions (Per Luca: da aggiungere).
+If we assume the rod to be viscoelastic, the constitutive equations to be considered have the form:
 \[  N (s,t)=  \hat{N}(\nu (s,t),\eta (s,t)) + \tilde{A} \nu_t (s,t)
 \]
 \[  H (s,t)=  \hat{H}(\nu (s,t),\eta (s,t)) + \tilde{B} \eta_t (s,t)
 \]
 \[  M (s,t)=  \hat{M}(\nu (s,t),\eta (s,t), \mu(s,t)) + \tilde{C} \mu_t (s,t),
 \]
-where $\hat{N}$,$\hat{H}$,$\hat{M}$ are given functions on (0,$\infty$)x$\mathbb{R}$x$\mathbb{R}$ and where $\tilde{A}$, $\tilde{B}$, $\tilde{C}$ are positive constants.
+where $\tilde{A}$, $\tilde{B}$, $\tilde{C}$ are positive constants.
 \\
 We may call H the \emph{shear force} and M the \emph{bending couple} (or \emph{moment}). When $\eta$ $\neq$0, there is no standard name for N.
 \\
+
 We model this by introducing the elastic potential density  as
 \[ \mathcal{U}(\mathbf{y}) = \frac{\cA}{2} (\nu - \nu_0)^2
 + \frac{\cC}{2} (\eta - \eta_0 )^2
