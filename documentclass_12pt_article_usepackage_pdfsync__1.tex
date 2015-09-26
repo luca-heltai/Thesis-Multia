@@ -146,8 +146,8 @@ Finally,
 \,ds\,dt +
 \int_{t_1}^{t_2} \int_{0}^{1} \mathcal{Q}_{ext}
 \,ds\,dt\\
-                                              & = \int_{t_1}^{t_2} \int_{0}^{1} (\tilde{A}(\nu_t)_s,\tilde{B}(\eta_t)_s,\tilde{A}(\mu_t)_s)\cdot (\delta\mathbf{r},\delta\theta)
-\,ds\,dt - \int_{t_1}^{t_2} \int_{0}^{1}  (\xi_\parallel (\mathbf{r}_t\cdot\mathbf{\tau})\mathbf{\tau} + \xi_\perp (\mathbf{r}_t\cdot\mathbf{P})\mathbf{P})\cdot \delta\mathbf{r}\,ds\,dt
+                                              & = \int_{t_1}^{t_2} \int_{0}^{1} (\tilde{A}(\nu_t)_s,\tilde{B}(\eta_t)_s,\tilde{C}(\mu_t)_s)\cdot (\delta\mathbf{r},\delta\theta)
+\,ds\,dt - \int_{t_1}^{t_2} \int_{0}^{1}  (\xi_\parallel (\mathbf{r}_t\cdot\mathbf{a})\mathbf{a} + \xi_\perp (\mathbf{r}_t\cdot\mathbf{b})\mathbf{b})\cdot \delta\mathbf{r}\,ds\,dt
 \end{split}
 \end{equation}
 After putting all together we have
@@ -159,13 +159,13 @@ After putting all together we have
          -\ro S \mathbf{r}_{tt}\\
          +(A(\nu - 1)_s,B\eta_s)\\
          + (\tilde_{A}(\nu_t)_s,\tilde_{B}(\eta_t)_s)\\
-         - (\xi_\parallel (\mathbf{r}_t\cdot\mathbf{\tau})\mathbf{\tau} + \xi_\perp (\mathbf{r}_t\cdot\mathbf{P})\mathbf{P})
+         - (\xi_\parallel (\mathbf{r}_t\cdot\mathbf{a})\mathbf{a} + \xi_\perp (\mathbf{r}_t\cdot\mathbf{b})\mathbf{b})
          \rgroup\\
          \cdot\delta\mathbf{r}\,ds\,dt\\
          + \int_{t_1}^{t_2} \int_{0}^{1}
          \lgroup-\ro I \theta_{tt}\\
          + C(\mu-\alpha)_s\\ 
-         + \tilde_{C}(\mu_t)_s\rgroup 
+         + \tilde{C}(\mu_t)_s\rgroup 
          \cdot\delta\mathbf{r}\,ds\,dt
 \end{split}
 \end{equation}
