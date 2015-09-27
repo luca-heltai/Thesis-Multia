@@ -1,0 +1,60 @@
+\begin{document}
+\subsection{Neglecting the inertial terms}
+When we don't consider the inertial terms, the equations of motion become:
+
+\[ \tilde{\mathbf{T}}_s - (\xi_\parallel (\mathbf{r}_t\cdot\mathbf{a})\mathbf{a} + \xi_\perp (\mathbf{r}_t\cdot\mathbf{b})\mathbf{b}) = 0\\
+
+M_s + \mathbf{e}_3 \cdot(\mathbf{r}_s \times \mathbf{\tilde{T}}) = 0.
+\]
+
+The yield the following system of the discrete equations of motion in matrix form:
+
+\[
+\begin{pmatrix}
+0 & 0 & 0 & 0 & 0 & 0 \\
+\xi_{\parallel}\mathbb{M}^\bar{\eta} & - \xi_{\parallel}\mathbb{M} & 0 & 0 & 0 & 0 \\
+-\xi_{\perp} \mathbb{M}^\bar{\nu} & 0 & - \xi_{\perp}\mathbb{M} & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+\theta_{t}\\
+\nu_{t}\\
+\eta_{t}\\
+M_{t}\\
+\tilde{N}_{t}\\
+\tilde{H}_{t}
+\end{pmatrix}\\
++ \begin{pmatrix}
+0 & 0 & 0 & \mathbb{B} & -\mathbb{M}^{\bar{\eta}} & \mathbb{M}^{\bar{\nu}} \\
+0 & 0 & 0 & 0 & -\mathbb{A} - \mathbb{M}^{\bar{\theta}_s^2} & -\mathbb{B}^{\bar{\theta_s}} + \mathbb{B}^{\bar{\theta_s}T}\\
+0 & 0 & 0 & 0 &  \mathbb{B}^{\bar{\theta_s}} - \mathbb{B}^{\bar{\theta_s}T} & -\mathbb{A} - \mathbb{M}^{\bar{\theta}_s^2} \\
+-C\mathbb{B} & 0 & 0 & \mathbb{M} & 0 & 0 \\
+0 & 0 & 0 & 0 & \mathbb{M}^{(\bar{\nu}-1)} & 0 \\
+0 & 0 & 0 & 0 & 0 & \mathbb{M}^{\bar{\eta}}
+\end{pmatrix}
+\begin{pmatrix}
+\theta\\
+\nu\\
+\eta\\
+M\\
+\tilde{N}\\
+\tilde{H}
+\end{pmatrix}
+\\
+= \begin{pmatrix}
+0\\
+\langle \tilde{N}_s - \bar{\theta}_s \tilde{H}, \delta\nu \rangle \\
+\langle \bar{\theta}_s \tilde{N} + \tilde{H}_s,\delta\eta \rangle \\
+-C\mathbb{M}^{\alpha} - \langle C\theta_s,\delta M \rangle\\
+0 \\
+0
+\end{pmatrix}
+\]
+
+
+
+
+
+\end{document}
