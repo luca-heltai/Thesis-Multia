@@ -6,8 +6,20 @@ When we don't consider the inertial terms, the equations of motion become:
 
 M_s + \mathbf{e}_3 \cdot(\mathbf{r}_s \times \mathbf{\tilde{T}}) = 0.
 \]
+We differentiate the first equation with respect to s and derive the following componential form:
+\begin{align}
+M_s + \nu \tilde{H} -\eta \tilde{N} 
+&= 0\\
+\tilde{N}_{ss} - 2\theta_s\tilde{H}_s - \tilde{H}\theta_{ss}- \tilde{N}\theta_s^2
+- \xi_{\parallel}\nu_t + \xi_{\parallel}\eta\theta_t &= 0\\
+\tilde{H}_{ss} + 2\theta_s\tilde{N}_s + \tilde{N}\theta_{ss} - \tilde{H}\theta_s^2  - \xi_{\perp}\nu\theta_t - \xi_{\perp}\eta_t
+&= 0\\
+M - C(\theta_s -\alpha)  &= 0\\
+\tilde{N}(\nu - 1) &= 0\\
+\tilde{H}\eta &= 0
+\end{align}
 
-The yield the following system of the discrete equations of motion in matrix form:
+They yield the following system of the discrete equations of motion in matrix form:
 
 \[
 \begin{pmatrix}
