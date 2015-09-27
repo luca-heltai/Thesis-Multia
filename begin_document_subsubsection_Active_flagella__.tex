@@ -4,8 +4,7 @@ We mimic the formulation in \cite{julicher} with a discretization in weak form a
 
 
 
-\subsubsubsection{Formulation of the Energy}
-
+\textbf{Formulation of the Energy}
 Given a configuration $\mathbf{r}$(s,t) of an active filament, its energy can be expressed by
 
 \[\mathcal{G}(\mathbf{r}) = \int_0^L \left( \frac{B}{2}(\kappa-\alpha)^2 +
@@ -45,11 +44,9 @@ and the tension as:
 
 \[N := -\zeta\kappa + \Lambda = B(\theta_s-\alpha)\kappa +\Lambda\]
 
-\subsubsubsection{Resistive force theory}
-\label{sec:resist-force-theory}
+\\\\
 
-
-
+\textbf{Resistive force theory}
 When immersed in a fluid, if we use \emph{resistive force theory},
 then the force applied by fluid on the filament can be modeled as
 
@@ -77,8 +74,8 @@ Writing $\gamma = \frac{\xi_\perp}{\xi_\parallel}$, we obtain:
 
 \[\xi_\perp \mathbf{r}_t =   (H_s + \kappa N) \mathbf{b} + \gamma (N_s - \kappa H) \mathbf{a}\]
 
-\subsubsection{Excluding the Lagrange multiplier}\label{differential-derivation}
-
+\\\\
+\textbf{Excluding the Lagrange multiplier}
 We know from the reconstruction of the curve that
 \(\mathbf{r}_{ts} = \mathbf{r}_{st} = \theta_s \mathbf{b}\),
 and we can exploit this to obtain two equations involving only
@@ -159,13 +156,9 @@ and we move all known terms and boundary terms on the right hand side:
 &\gamma\langle N_{s}-\bar \kappa H, \delta N \rangle 
 \end{pmatrix}
 \end{multline}
-
-\subsubsection{Discretization and Matrix form of the weak formulation}\label{matrix-form-of-the-weak-formulation}
-
-Here we use the usual shorthand notation:
-
-
-If we restrict the functions $\theta$, H and N to live in V_h we can rewrite the system above in matrix form:
+\\\\
+\textbf{Discretization and Matrix form of the weak formulation}
+Here we use the usual shorthand notation. If we restrict the functions $\theta$, H and N to live in V_h we can rewrite the system above in matrix form:
 
 \begin{multline}
 \label{eq:4}
