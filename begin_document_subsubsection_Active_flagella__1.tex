@@ -14,5 +14,31 @@ $\mathbf{r}_s=\nu\mathbf{a}+\eta\mathbf{b}$\\
     \end{tabular} 
 
 
+\\\\\\\\
+( \emph{Per LUCA: Scrivo qua dei dubbi con le mie risposte & considerazioni che potrebbero risultare utili prima di trattare la parte dei test numerici. Spero di essermi espressa in maniera abbastanza chiara. Ho riscritto il problema che avevamo di Julicher con le notiazioni nostre.
+Il commento si può cancellare una volta letto.}
+\\\\
+Per quanto riguarda le equazioni costitutive, mi sono accertata che sono
+\[ \hat{M} = C(\theta_s -\alpha), \hat{N} = A(\nu - 1), \hat{H} = B\eta \]
+senza le derivate spaziali. Probabilmente all'inizio si è pensato di prendere 
+\[ \hat{M} = C(\theta_s -\alpha)_s, \hat{N} = A(\nu - 1)_s, \hat{H} = B\eta _s, \] 
+ricordando che in Jülicher compare un
+$f_e = -\frac{\partial \mathcal{G}}{\partial \mathbf{r}} = (H \mathbf{b} + N \mathbf{a})_s$
+ed H risultava essere uguale a $H = - B(\theta_s - \alpha)_s$. Però qua la situazione è leggermente diversa, perchè le cose sono molto più semplificate grazie all'equilibro imposto.
+Infatti tale valore di H si ottiene considerando la derivata del funzionale energia; ecco perchè la derivata spaziale in più.
+L'altra grande differenza è che l'equazione in cui compare $\alpha$ in Jülicher è la relazione che mi ha H, che non è altro che la componente della f_e lungo la direzione $\mathbf{b}$, che viene poi derivata. Mentre nel nostro problema $\alpha$ compare nella relazione del momento cogniugato ( rif.Antman ).
+\\\\
+\emph{Quindi le due differenze che noto sono:}
+\\\\
+\emph{1. In Jülicher abbiamo compare una derivata spaziale in più.}
+\\\\
+\emph{2. $\alpha$ compare in Julicher in H, mentre per noi in M. Le due equazioni hanno natura diversa.}
+\\\\
+Ciò nonnostante, se le cose sono state fatte bene, una volta che non consideriamo più i termini inerziali nel problema vincolato il sistema discreto finale che abbiamo trovato ( sistema (74) )dovrebbe essere equivalente al vecchio sistema che avevamo in Jülicher (quello presente in Discretization and Matrix form of the weak formulation nella sezione 5.4.2 Active flagella ).
+\\\\
+Non solo, guardando la tabella Table 1. di sopra, dovrei poter passare da una all'altra in modo equivalente. Ma le cose non mi tornanano per i due motivi sopra elencati. Cosa potrei sbagliare?) 
+
+
+
 
 \end{document}
